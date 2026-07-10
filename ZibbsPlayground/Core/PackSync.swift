@@ -46,14 +46,19 @@ enum PackSync {
 
     /// Kick off a sync unless one ran recently (or is running now).
     static func syncIfDue(force: Bool = false) {
-        guard !running else { return }
         let last = UserDefaults.standard.double(forKey: lastSyncKey)
         guard force || Date().timeIntervalSince1970 - last >= minimumInterval else { return }
+        Task { await syncNow() }
+    }
+
+    /// Run a sync immediately and return once it finishes, ignoring the
+    /// usual interval — for the home screen's refresh button. A call while
+    /// another sync is running returns right away and changes nothing.
+    static func syncNow() async {
+        guard !running else { return }
         running = true
-        Task {
-            await sync()
-            running = false
-        }
+        await sync()
+        running = false
     }
 
     private static func sync() async {

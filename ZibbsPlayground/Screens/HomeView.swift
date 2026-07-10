@@ -4,6 +4,7 @@ struct HomeView: View {
     @EnvironmentObject private var appState: AppState
     @EnvironmentObject private var library: ContentLibrary
     @State private var appeared = false
+    @State private var syncing = false
 
     var body: some View {
         GeometryReader { geo in
@@ -71,6 +72,11 @@ struct HomeView: View {
             }
             .frame(maxWidth: .infinity)
         }
+        .overlay(alignment: .topTrailing) {
+            syncButton
+                .padding(.top, 18)
+                .padding(.trailing, 22)
+        }
         .onAppear {
             withAnimation(.spring(response: 0.7, dampingFraction: 0.6)) {
                 appeared = true
@@ -79,6 +85,41 @@ struct HomeView: View {
                 Narrator.shared.say("Hi Explorer! I'm Zibb! Welcome to my playground! Pick a planet, and let's play!")
             }
         }
+    }
+
+    /// Checks the repo for new worlds right now instead of waiting for the
+    /// next background sync. Safe to mash: extra taps while a sync is
+    /// running are no-ops, and failures stay silent like every other sync.
+    private var syncButton: some View {
+        Button {
+            guard !syncing else { return }
+            SoundFX.shared.play(.whoosh)
+            syncing = true
+            let worldsBefore = Set(library.worlds.map(\.id))
+            Task {
+                await PackSync.syncNow()
+                syncing = false
+                let newWorlds = library.worlds.filter { !worldsBefore.contains($0.id) }
+                if let world = newWorlds.first {
+                    Narrator.shared.say("Wow! A new world just landed: \(world.name)! Let's go explore!")
+                }
+            }
+        } label: {
+            Image(systemName: "arrow.triangle.2.circlepath")
+                .font(.system(size: 22, weight: .bold))
+                .foregroundColor(.white.opacity(0.8))
+                .rotationEffect(.degrees(syncing ? 360 : 0))
+                .animation(
+                    syncing
+                        ? .linear(duration: 1).repeatForever(autoreverses: false)
+                        : .default,
+                    value: syncing
+                )
+                .padding(14)
+                .background(Circle().fill(.white.opacity(0.10)))
+        }
+        .buttonStyle(PressBounceStyle())
+        .opacity(appeared ? 1 : 0)
     }
 
     /// Shown only if every pack failed to load — the app stays friendly
