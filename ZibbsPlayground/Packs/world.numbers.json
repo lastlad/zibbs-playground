@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "id": "world.numbers",
+  "version": 1,
+  "worldID": "M",
+  "name": "Number Nebula",
+  "tagline": "Count and play with numbers!",
+  "emoji": "🔢",
+  "accent": "pink",
+  "accentSecondary": "purple",
+  "ring": false,
+  "levels": [
+    {
+      "id": "M01",
+      "title": "Comet Count",
+      "concept": "Counting 1 to 4",
+      "emoji": "☄️",
+      "intro": "Welcome to the Number Nebula, Explorer! Look, comets are zooming by! Tap each one and let's count them together.",
+      "template": "countTap",
+      "countTap": {
+        "rounds": [
+          {
+            "prompt": "Tap each comet and count!",
+            "emoji": "☄️",
+            "count": 2,
+            "success": "Two comets! Zoom, zoom!"
+          },
+          {
+            "prompt": "More comets! Tap and count them all!",
+            "emoji": "☄️",
+            "count": 3,
+            "success": "Three comets flew past!"
+          },
+          {
+            "prompt": "So many comets! Count every one!",
+            "emoji": "☄️",
+            "count": 4,
+            "success": "Four comets! What a show!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M02",
+      "title": "Find the Number",
+      "concept": "Recognizing numerals 1 to 5",
+      "emoji": "🔍",
+      "intro": "Numbers are hiding among the stars! When I say a number, tap it as fast as you can!",
+      "template": "tapChoice",
+      "tapChoice": {
+        "rounds": [
+          {
+            "question": "Which one is the number three?",
+            "spoken": "Can you find the number three?",
+            "options": [{ "text": "1" }, { "text": "3" }, { "text": "5" }],
+            "answer": 1,
+            "success": "Yes! That's three!",
+            "hint": "Look for the number three!"
+          },
+          {
+            "question": "Which one is the number one?",
+            "spoken": "Now find the number one!",
+            "options": [{ "text": "1" }, { "text": "2" }, { "text": "4" }],
+            "answer": 0,
+            "success": "That's one! Number one!",
+            "hint": "One is a tall straight line!"
+          },
+          {
+            "question": "Which one is the number five?",
+            "spoken": "Where is the number five hiding?",
+            "options": [{ "text": "3" }, { "text": "5" }, { "text": "2" }],
+            "answer": 1,
+            "success": "You found five!",
+            "hint": "Look for the number five!"
+          },
+          {
+            "question": "Which one is the number two?",
+            "spoken": "Can you spot the number two?",
+            "options": [{ "text": "2" }, { "text": "4" }, { "text": "1" }],
+            "answer": 0,
+            "success": "Yes! That's two!",
+            "hint": "Two looks like a swan swimming!"
+          },
+          {
+            "question": "Which one is the number four?",
+            "spoken": "Last one! Find the number four!",
+            "options": [{ "text": "5" }, { "text": "3" }, { "text": "4" }],
+            "answer": 2,
+            "success": "Four! You know all your numbers!",
+            "hint": "Look for the number four!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M03",
+      "title": "Number Friends",
+      "concept": "Matching numerals to quantities",
+      "emoji": "🤝",
+      "intro": "Every number has a best friend — a group that's just its size! Drag each number to its matching group.",
+      "template": "matchPairs",
+      "matchPairs": {
+        "prompt": "Drag each number to its matching group!",
+        "perRound": 3,
+        "pairs": [
+          {
+            "drag": { "text": "1" },
+            "target": { "emoji": "🚀", "count": 1 },
+            "success": "One rocket!"
+          },
+          {
+            "drag": { "text": "2" },
+            "target": { "emoji": "🌙", "count": 2 },
+            "success": "Two moons!"
+          },
+          {
+            "drag": { "text": "3" },
+            "target": { "emoji": "⭐", "count": 3 },
+            "success": "Three stars!"
+          },
+          {
+            "drag": { "text": "4" },
+            "target": { "emoji": "🪐", "count": 4 },
+            "success": "Four planets!"
+          },
+          {
+            "drag": { "text": "5" },
+            "target": { "emoji": "👾", "count": 5 },
+            "success": "Five friendly aliens!"
+          },
+          {
+            "drag": { "text": "6" },
+            "target": { "emoji": "☄️", "count": 6 },
+            "success": "Six comets! Amazing!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M04",
+      "title": "How Many?",
+      "concept": "Counting groups",
+      "emoji": "🧮",
+      "intro": "Time for a counting hunt! Count what's inside each bubble, and tap the group I ask for!",
+      "template": "tapChoice",
+      "tapChoice": {
+        "rounds": [
+          {
+            "question": "Tap the group with TWO suns!",
+            "spoken": "Count carefully! Tap the group with two suns!",
+            "options": [
+              { "emoji": "🌞", "count": 2 },
+              { "emoji": "🌞", "count": 3 },
+              { "emoji": "🌞", "count": 4 }
+            ],
+            "answer": 0,
+            "success": "That's two suns!",
+            "hint": "Count each group! Which has exactly two?"
+          },
+          {
+            "question": "Tap the group with THREE moons!",
+            "spoken": "Now find the group with three moons!",
+            "options": [
+              { "emoji": "🌙", "count": 4 },
+              { "emoji": "🌙", "count": 3 },
+              { "emoji": "🌙", "count": 2 }
+            ],
+            "answer": 1,
+            "success": "Yes! One, two, three moons!",
+            "hint": "Count them one by one!"
+          },
+          {
+            "question": "Tap the group with FOUR stars!",
+            "spoken": "Which group has four stars?",
+            "options": [
+              { "emoji": "⭐", "count": 4 },
+              { "emoji": "⭐", "count": 2 },
+              { "emoji": "⭐", "count": 5 }
+            ],
+            "answer": 0,
+            "success": "Four twinkly stars!",
+            "hint": "Keep counting! Four is what we want!"
+          },
+          {
+            "question": "Tap the group with FIVE aliens!",
+            "spoken": "Can you find five friendly aliens?",
+            "options": [
+              { "emoji": "👾", "count": 3 },
+              { "emoji": "👾", "count": 5 },
+              { "emoji": "👾", "count": 4 }
+            ],
+            "answer": 1,
+            "success": "Five aliens saying hello!",
+            "hint": "Count all the aliens in each bubble!"
+          },
+          {
+            "question": "Tap the group with SIX planets!",
+            "spoken": "Last one! Find six planets!",
+            "options": [
+              { "emoji": "🪐", "count": 6 },
+              { "emoji": "🪐", "count": 4 },
+              { "emoji": "🪐", "count": 5 }
+            ],
+            "answer": 0,
+            "success": "Six planets! You're a counting champion!",
+            "hint": "Six is a big number! Count carefully!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M05",
+      "title": "Number Train",
+      "concept": "Number order 1 to 5",
+      "emoji": "🚂",
+      "intro": "All aboard the number train! The numbers got mixed up. Tap them in order, starting from one!",
+      "template": "orderSequence",
+      "orderSequence": {
+        "rounds": [
+          {
+            "prompt": "Tap the numbers in order! One comes first!",
+            "items": [{ "text": "1" }, { "text": "2" }, { "text": "3" }],
+            "names": ["One!", "Two!", "Three!"],
+            "success": "One, two, three! The train is rolling!"
+          },
+          {
+            "prompt": "A longer train! Start at one!",
+            "items": [{ "text": "1" }, { "text": "2" }, { "text": "3" }, { "text": "4" }],
+            "names": ["One!", "Two!", "Three!", "Four!"],
+            "success": "One, two, three, four! Choo choo!"
+          },
+          {
+            "prompt": "The longest train yet! You can do it!",
+            "items": [{ "text": "1" }, { "text": "2" }, { "text": "3" }, { "text": "4" }, { "text": "5" }],
+            "names": ["One!", "Two!", "Three!", "Four!", "Five!"],
+            "success": "All five in order! What a superstar!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M06",
+      "title": "More or Less",
+      "concept": "Comparing amounts",
+      "emoji": "⚖️",
+      "intro": "Some groups are big and some are small! Look at both sides and tell me which has more, and which has fewer.",
+      "template": "tapChoice",
+      "tapChoice": {
+        "shuffleOptions": false,
+        "rounds": [
+          {
+            "question": "Which side has MORE rockets?",
+            "spoken": "Look at both sides! Which has more rockets?",
+            "options": [
+              { "emoji": "🚀", "count": 2 },
+              { "emoji": "🚀", "count": 5 }
+            ],
+            "answer": 1,
+            "success": "Yes! Five is more than two!",
+            "hint": "Count each side! More means a bigger number!"
+          },
+          {
+            "question": "Which side has MORE butterflies?",
+            "spoken": "Which side has more butterflies?",
+            "options": [
+              { "emoji": "🦋", "count": 4 },
+              { "emoji": "🦋", "count": 1 }
+            ],
+            "answer": 0,
+            "success": "Four is more than one!",
+            "hint": "Which bubble looks fuller?"
+          },
+          {
+            "question": "Which side has FEWER moons?",
+            "spoken": "Tricky one! Which side has fewer moons?",
+            "options": [
+              { "emoji": "🌙", "count": 3 },
+              { "emoji": "🌙", "count": 6 }
+            ],
+            "answer": 0,
+            "success": "Three is fewer than six! Fewer means less!",
+            "hint": "Fewer means the smaller group!"
+          },
+          {
+            "question": "Which side has MORE stars?",
+            "spoken": "Which side has more stars?",
+            "options": [
+              { "emoji": "⭐", "count": 5 },
+              { "emoji": "⭐", "count": 3 }
+            ],
+            "answer": 0,
+            "success": "Five stars is more than three!",
+            "hint": "Count both sides carefully!"
+          },
+          {
+            "question": "Which side has FEWER aliens?",
+            "spoken": "Last one! Which side has fewer aliens?",
+            "options": [
+              { "emoji": "👾", "count": 2 },
+              { "emoji": "👾", "count": 4 }
+            ],
+            "answer": 0,
+            "success": "Two is fewer than four! You've got it!",
+            "hint": "Fewer means the smaller group!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M07",
+      "title": "Sorting Station",
+      "concept": "Counting and grouping",
+      "emoji": "🗂️",
+      "intro": "The sorting station is open! Count what's in each group, then drag it to its number!",
+      "template": "sortBins",
+      "sortBins": {
+        "prompt": "Count each group, then drag it to its number!",
+        "perWave": 3,
+        "bins": [
+          { "label": "Two", "emoji": "2️⃣" },
+          { "label": "Three", "emoji": "3️⃣" }
+        ],
+        "items": [
+          { "emoji": "🍎", "count": 2, "bin": 0, "name": "Two apples!" },
+          { "emoji": "🐟", "count": 3, "bin": 1, "name": "Three fish!" },
+          { "emoji": "🎈", "count": 2, "bin": 0, "name": "Two balloons!" },
+          { "emoji": "🐞", "count": 3, "bin": 1, "name": "Three ladybugs!" },
+          { "emoji": "🧦", "count": 2, "bin": 0, "name": "Two socks!" },
+          { "emoji": "🚗", "count": 3, "bin": 1, "name": "Three cars!" }
+        ]
+      }
+    },
+    {
+      "id": "M08",
+      "title": "Star Pickers",
+      "concept": "Counting 5 to 7",
+      "emoji": "⭐",
+      "intro": "Now for BIG numbers! Let's count higher than ever before. Tap everything you see!",
+      "template": "countTap",
+      "countTap": {
+        "rounds": [
+          {
+            "prompt": "Tap each star and count to five!",
+            "emoji": "⭐",
+            "count": 5,
+            "success": "Five shiny stars!"
+          },
+          {
+            "prompt": "Six aliens are waving! Count them all!",
+            "emoji": "👾",
+            "count": 6,
+            "success": "Six friendly aliens!"
+          },
+          {
+            "prompt": "Seven planets! Can you count that high?",
+            "emoji": "🪐",
+            "count": 7,
+            "success": "Seven planets! That's so high!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M09",
+      "title": "Rocket Countdown",
+      "concept": "Counting backwards",
+      "emoji": "🚀",
+      "intro": "Rockets count BACKWARDS before they launch! Tap the numbers from biggest to smallest, and blast off!",
+      "template": "orderSequence",
+      "orderSequence": {
+        "rounds": [
+          {
+            "prompt": "Count DOWN! Start at three!",
+            "spoken": "Count down for launch! Three comes first!",
+            "items": [{ "text": "3" }, { "text": "2" }, { "text": "1" }],
+            "names": ["Three!", "Two!", "One!"],
+            "success": "Three, two, one... blast off!"
+          },
+          {
+            "prompt": "A bigger countdown! Start at five!",
+            "spoken": "Now count down from five!",
+            "items": [{ "text": "5" }, { "text": "4" }, { "text": "3" }, { "text": "2" }, { "text": "1" }],
+            "names": ["Five!", "Four!", "Three!", "Two!", "One!"],
+            "success": "Five, four, three, two, one... BLAST OFF! Whoooosh!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M10",
+      "title": "Zibb's Number Quiz",
+      "concept": "Numbers to ten",
+      "emoji": "🏆",
+      "intro": "It's the great number quiz! Show me everything you've learned, Explorer. Big numbers ahead!",
+      "template": "tapChoice",
+      "tapChoice": {
+        "rounds": [
+          {
+            "question": "Which one is the number seven?",
+            "spoken": "Find the number seven!",
+            "options": [{ "text": "7" }, { "text": "4" }, { "text": "9" }],
+            "answer": 0,
+            "success": "Seven! Great start!",
+            "hint": "Look for the number seven!"
+          },
+          {
+            "question": "Tap the group with EIGHT stars!",
+            "spoken": "Count carefully! Which group has eight stars?",
+            "options": [
+              { "emoji": "⭐", "count": 8 },
+              { "emoji": "⭐", "count": 5 }
+            ],
+            "answer": 0,
+            "success": "Eight stars! Wow!",
+            "hint": "Eight is a lot! Count each star!"
+          },
+          {
+            "question": "Which one is the number nine?",
+            "spoken": "Where is the number nine?",
+            "options": [{ "text": "6" }, { "text": "9" }, { "text": "8" }],
+            "answer": 1,
+            "success": "Nine! Almost at the top!",
+            "hint": "Careful — six and nine love to trick explorers!"
+          },
+          {
+            "question": "Which side has MORE planets?",
+            "spoken": "Which side has more planets?",
+            "options": [
+              { "emoji": "🪐", "count": 9 },
+              { "emoji": "🪐", "count": 6 }
+            ],
+            "answer": 0,
+            "success": "Nine is more than six!",
+            "hint": "Count both sides!"
+          },
+          {
+            "question": "Which one is the number TEN?",
+            "spoken": "The biggest one of all! Find the number ten!",
+            "options": [{ "text": "10" }, { "text": "6" }, { "text": "8" }],
+            "answer": 0,
+            "success": "TEN! You found ten! You know ALL the numbers, Explorer!",
+            "hint": "Ten has two parts — a one and a zero!"
+          }
+        ]
+      }
+    }
+  ]
+}
