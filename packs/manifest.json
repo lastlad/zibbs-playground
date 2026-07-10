@@ -5,6 +5,11 @@
       "id": "world.numbers",
       "version": 1,
       "file": "ZibbsPlayground/Packs/world.numbers.json"
+    },
+    {
+      "id": "world.dinosaurs",
+      "version": 1,
+      "file": "ZibbsPlayground/Packs/world.dinosaurs.json"
     }
   ]
 }

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "id": "world.dinosaurs",
+  "version": 1,
+  "worldID": "D",
+  "name": "Dino Valley",
+  "tagline": "Stomp and roar with dinosaurs!",
+  "emoji": "🦖",
+  "accent": "green",
+  "accentSecondary": "orange",
+  "ring": false,
+  "levels": [
+    {
+      "id": "D01",
+      "title": "Egg Hunt",
+      "concept": "Counting 2 to 4",
+      "emoji": "🥚",
+      "intro": "Welcome to Dino Valley, Explorer! The dinosaurs left eggs everywhere! Tap each one and count with me.",
+      "template": "countTap",
+      "countTap": {
+        "rounds": [
+          {
+            "prompt": "Tap each egg and count!",
+            "emoji": "🥚",
+            "count": 2,
+            "success": "Two dino eggs! Wobble, wobble!"
+          },
+          {
+            "prompt": "More eggs! Tap and count them all!",
+            "emoji": "🥚",
+            "count": 3,
+            "success": "Three eggs! The mamas will be so happy!"
+          },
+          {
+            "prompt": "Footprints! Tap each one and count!",
+            "emoji": "👣",
+            "count": 4,
+            "success": "Four big stomps! A dinosaur walked here!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D02",
+      "title": "Who's That Dino?",
+      "concept": "Spotting dinosaurs and dino things",
+      "emoji": "🔍",
+      "intro": "Dinosaurs are hiding in the valley! When I call one, tap it as fast as you can!",
+      "template": "tapChoice",
+      "tapChoice": {
+        "rounds": [
+          {
+            "question": "Tap the T. rex!",
+            "spoken": "Can you find the T. rex?",
+            "options": [{ "emoji": "🦖" }, { "emoji": "🐢" }, { "emoji": "🦎" }],
+            "answer": 0,
+            "success": "Roar! You found the T. rex!",
+            "hint": "The T. rex stands up tall with big teeth!"
+          },
+          {
+            "question": "Tap the long neck dinosaur!",
+            "spoken": "Now find the dinosaur with the long, long neck!",
+            "options": [{ "emoji": "🦕" }, { "emoji": "🦖" }, { "emoji": "🐊" }],
+            "answer": 0,
+            "success": "Yes! Its neck is long like a slide!",
+            "hint": "Look for the neck that reaches way up high!"
+          },
+          {
+            "question": "Tap the dinosaur egg!",
+            "spoken": "Where is the dinosaur egg hiding?",
+            "options": [{ "emoji": "🥚" }, { "emoji": "🪨" }, { "emoji": "⚽" }],
+            "answer": 0,
+            "success": "That's the egg! Shhh, a baby dino is sleeping inside!",
+            "hint": "The egg is smooth and white, not bumpy like a rock!"
+          },
+          {
+            "question": "Tap the dinosaur bone!",
+            "spoken": "Dino diggers look for bones! Can you find one?",
+            "options": [{ "emoji": "🦴" }, { "emoji": "🌿" }, { "emoji": "🪨" }],
+            "answer": 0,
+            "success": "A dino bone! You're a real fossil finder!",
+            "hint": "A bone is white with two bumpy ends!"
+          },
+          {
+            "question": "Tap the volcano!",
+            "spoken": "Last one! Find the rumbly volcano!",
+            "options": [{ "emoji": "🌋" }, { "emoji": "⛰️" }, { "emoji": "🏠" }],
+            "answer": 0,
+            "success": "The volcano! Rumble, rumble, boom!",
+            "hint": "The volcano is the mountain with hot orange lava on top!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D03",
+      "title": "Dino Dinner",
+      "concept": "Who eats what",
+      "emoji": "🍖",
+      "intro": "The dinosaurs are hungry! Drag each snack to the friend who loves it most.",
+      "template": "matchPairs",
+      "matchPairs": {
+        "prompt": "Drag each snack to the right friend!",
+        "spoken": "Dinner time! Who eats what?",
+        "perRound": 3,
+        "pairs": [
+          {
+            "drag": { "emoji": "🌿" },
+            "target": { "emoji": "🦕" },
+            "success": "Munch! The long neck loves leaves!"
+          },
+          {
+            "drag": { "emoji": "🍖" },
+            "target": { "emoji": "🦖" },
+            "success": "Chomp! T. rex eats meat!"
+          },
+          {
+            "drag": { "emoji": "🐛" },
+            "target": { "emoji": "🦎" },
+            "success": "The little lizard catches the bug!"
+          },
+          {
+            "drag": { "emoji": "🐟" },
+            "target": { "emoji": "🐊" },
+            "success": "Snap! The crocodile catches a fish!"
+          },
+          {
+            "drag": { "emoji": "🥚" },
+            "target": { "emoji": "🪹" },
+            "success": "The egg is safe and cozy in the nest!"
+          },
+          {
+            "drag": { "emoji": "🌺" },
+            "target": { "emoji": "🦋" },
+            "success": "The butterfly sips the sweet flower!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D04",
+      "title": "Nest Numbers",
+      "concept": "Counting and grouping",
+      "emoji": "🪺",
+      "intro": "The mama dinos are sorting their nests! Count what's in each group, then drag it to the right nest.",
+      "template": "sortBins",
+      "sortBins": {
+        "prompt": "Count each group, then drag it to its nest!",
+        "spoken": "Count carefully, then find the nest with that number!",
+        "perWave": 3,
+        "bins": [
+          { "label": "Two", "emoji": "2️⃣" },
+          { "label": "Three", "emoji": "3️⃣" }
+        ],
+        "items": [
+          { "emoji": "🥚", "count": 2, "bin": 0, "name": "Two eggs!" },
+          { "emoji": "🦴", "count": 3, "bin": 1, "name": "Three bones!" },
+          { "emoji": "👣", "count": 2, "bin": 0, "name": "Two footprints!" },
+          { "emoji": "🌿", "count": 3, "bin": 1, "name": "Three leaves!" },
+          { "emoji": "🦖", "count": 2, "bin": 0, "name": "Two T. rexes!" },
+          { "emoji": "🦕", "count": 3, "bin": 1, "name": "Three long necks!" }
+        ]
+      }
+    },
+    {
+      "id": "D05",
+      "title": "Growing Up Dino",
+      "concept": "Life cycle order",
+      "emoji": "🐣",
+      "intro": "Every big dinosaur starts as a tiny egg! Tap the pictures in order to watch a dino grow up.",
+      "template": "orderSequence",
+      "orderSequence": {
+        "rounds": [
+          {
+            "prompt": "Tap them in order! The egg comes first!",
+            "spoken": "How does a dino grow? The egg comes first!",
+            "items": [{ "emoji": "🥚" }, { "emoji": "🐣" }, { "emoji": "🦕" }],
+            "names": ["An egg!", "Crack! It's hatching!", "A big long neck!"],
+            "success": "Egg, hatchling, big dino! It grew up!"
+          },
+          {
+            "prompt": "A T. rex is growing! Start with the egg!",
+            "spoken": "Now watch a T. rex grow! Start with the egg!",
+            "items": [{ "emoji": "🥚" }, { "emoji": "🐣" }, { "emoji": "🦎" }, { "emoji": "🦖" }],
+            "names": ["An egg!", "Crack! It's hatching!", "A little dino!", "A great big T. rex!"],
+            "success": "From tiny egg to mighty T. rex! Roar!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D06",
+      "title": "Footprint Trail",
+      "concept": "Counting 5 to 7",
+      "emoji": "👣",
+      "intro": "A dinosaur stomped through the valley! Follow the trail and count everything it left behind. Big numbers ahead!",
+      "template": "countTap",
+      "countTap": {
+        "rounds": [
+          {
+            "prompt": "Tap each footprint and count to five!",
+            "emoji": "👣",
+            "count": 5,
+            "success": "Five stomps! Stomp, stomp, stomp!"
+          },
+          {
+            "prompt": "Bones on the trail! Count them all!",
+            "emoji": "🦴",
+            "count": 6,
+            "success": "Six dino bones! What a find!"
+          },
+          {
+            "prompt": "Seven eggs! Can you count that high?",
+            "emoji": "🥚",
+            "count": 7,
+            "success": "Seven eggs! That's a whole dino family!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D07",
+      "title": "Nest Watch",
+      "concept": "Comparing amounts",
+      "emoji": "⚖️",
+      "intro": "Some nests are full and some are almost empty! Look at both sides and tell me which has more, and which has fewer.",
+      "template": "tapChoice",
+      "tapChoice": {
+        "shuffleOptions": false,
+        "rounds": [
+          {
+            "question": "Which nest has MORE eggs?",
+            "spoken": "Look at both nests! Which has more eggs?",
+            "options": [
+              { "emoji": "🥚", "count": 2 },
+              { "emoji": "🥚", "count": 5 }
+            ],
+            "answer": 1,
+            "success": "Yes! Five eggs is more than two!",
+            "hint": "Count each side! More means a bigger number!"
+          },
+          {
+            "question": "Which side has MORE footprints?",
+            "spoken": "Which side has more footprints?",
+            "options": [
+              { "emoji": "👣", "count": 4 },
+              { "emoji": "👣", "count": 1 }
+            ],
+            "answer": 0,
+            "success": "Four is more than one! Stomp, stomp!",
+            "hint": "Which side looks fuller?"
+          },
+          {
+            "question": "Which side has FEWER bones?",
+            "spoken": "Tricky one! Which side has fewer bones?",
+            "options": [
+              { "emoji": "🦴", "count": 3 },
+              { "emoji": "🦴", "count": 6 }
+            ],
+            "answer": 0,
+            "success": "Three is fewer than six! Fewer means less!",
+            "hint": "Fewer means the smaller group!"
+          },
+          {
+            "question": "Which side has MORE leaves?",
+            "spoken": "The long necks are hungry! Which side has more leaves?",
+            "options": [
+              { "emoji": "🌿", "count": 5 },
+              { "emoji": "🌿", "count": 3 }
+            ],
+            "answer": 0,
+            "success": "Five leaves! The long necks will feast!",
+            "hint": "Count both sides carefully!"
+          },
+          {
+            "question": "Which side has FEWER eggs?",
+            "spoken": "Last one! Which side has fewer eggs?",
+            "options": [
+              { "emoji": "🥚", "count": 2 },
+              { "emoji": "🥚", "count": 4 }
+            ],
+            "answer": 0,
+            "success": "Two is fewer than four! You've got it!",
+            "hint": "Fewer means the smaller group!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D08",
+      "title": "Volcano Countdown",
+      "concept": "Counting backwards",
+      "emoji": "🌋",
+      "intro": "The volcano is getting rumbly! Tap the numbers from biggest to smallest and count down to the big boom!",
+      "template": "orderSequence",
+      "orderSequence": {
+        "rounds": [
+          {
+            "prompt": "Count DOWN! Start at three!",
+            "spoken": "Count down for the volcano! Three comes first!",
+            "items": [{ "text": "3" }, { "text": "2" }, { "text": "1" }],
+            "names": ["Three!", "Two!", "One!"],
+            "success": "Three, two, one... BOOM! Rumble rumble!"
+          },
+          {
+            "prompt": "A bigger rumble! Count down from five!",
+            "spoken": "Now count down from five!",
+            "items": [{ "text": "5" }, { "text": "4" }, { "text": "3" }, { "text": "2" }, { "text": "1" }],
+            "names": ["Five!", "Four!", "Three!", "Two!", "One!"],
+            "success": "Five, four, three, two, one... BOOM! The dinos all cheered!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D09",
+      "title": "Zibb's Dino Quiz",
+      "concept": "Dino Valley review",
+      "emoji": "🏆",
+      "intro": "It's the great dino quiz! Show me everything you've learned, Explorer. The dinosaurs are all watching!",
+      "template": "tapChoice",
+      "tapChoice": {
+        "rounds": [
+          {
+            "question": "Tap the T. rex!",
+            "spoken": "First one! Find the T. rex!",
+            "options": [{ "emoji": "🦖" }, { "emoji": "🦕" }, { "emoji": "🐢" }],
+            "answer": 0,
+            "success": "Roar! That's the T. rex!",
+            "hint": "The T. rex stands tall with big teeth!"
+          },
+          {
+            "question": "What does the long neck eat? Tap it!",
+            "spoken": "What does the long neck dinosaur love to eat?",
+            "options": [{ "emoji": "🌿" }, { "emoji": "🍖" }],
+            "answer": 0,
+            "success": "Leaves! Munch, munch, munch!",
+            "hint": "The long neck reaches up high for green food!"
+          },
+          {
+            "question": "Tap the group with EIGHT eggs!",
+            "spoken": "Count carefully! Which group has eight eggs?",
+            "options": [
+              { "emoji": "🥚", "count": 8 },
+              { "emoji": "🥚", "count": 5 }
+            ],
+            "answer": 0,
+            "success": "Eight eggs! What a big nest!",
+            "hint": "Eight is a lot! Count each egg!"
+          },
+          {
+            "question": "Tap the group with MORE bones!",
+            "spoken": "Which group has more bones?",
+            "options": [
+              { "emoji": "🦴", "count": 9 },
+              { "emoji": "🦴", "count": 6 }
+            ],
+            "answer": 0,
+            "success": "Nine is more than six! Amazing counting!",
+            "hint": "Count both groups!"
+          },
+          {
+            "question": "Tap the group with TEN footprints!",
+            "spoken": "The biggest count of all! Find ten footprints!",
+            "options": [
+              { "emoji": "👣", "count": 10 },
+              { "emoji": "👣", "count": 7 }
+            ],
+            "answer": 0,
+            "success": "TEN stomps! You did it, Explorer! All the dinosaurs are roaring for you!",
+            "hint": "Ten is the biggest! Count every footprint!"
+          }
+        ]
+      }
+    }
+  ]
+}
