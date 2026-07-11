@@ -82,7 +82,7 @@ struct HomeView: View {
                 appeared = true
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-                Narrator.shared.say("Hi Explorer! I'm Zibb! Welcome to my playground! Pick a planet, and let's play!")
+                Narrator.shared.say(AppLines.shared.homeGreeting)
             }
         }
     }
@@ -101,7 +101,7 @@ struct HomeView: View {
                 syncing = false
                 let newWorlds = library.worlds.filter { !worldsBefore.contains($0.id) }
                 if let world = newWorlds.first {
-                    Narrator.shared.say("Wow! A new world just landed: \(world.name)! Let's go explore!")
+                    Narrator.shared.say(AppLines.shared.newWorld(world: world.name))
                 }
             }
         } label: {

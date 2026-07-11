@@ -169,11 +169,20 @@ Covers: counting up/down, life cycles, size ordering, story sequencing.
 ## Publishing a pack
 
 1. Add the JSON to `ZibbsPlayground/Packs/` (ships in the next app build) —
-   or anywhere in the repo for server-only packs.
+   or `packs/` for server-only packs.
 2. Run `python3 tools/validate_pack.py --all`.
 3. Add/update its entry in `packs/manifest.json` — **bump `version`**.
-4. Push to `main`. Devices pick it up on their next foreground sync
-   (bundled packs also ship with the next Xcode build).
+4. Push a branch and open a PR. The Voice bank workflow records Zibb's
+   voice for every new line and commits the clips to your branch (it also
+   maintains `voiceVersion`/`voiceFile` in the manifest — never edit those
+   by hand). Listen via the workflow's `new-voice-clips` artifact.
+5. Merge to `main`. Devices pick up the pack and its voice on their next
+   foreground sync (bundled packs also ship with the next Xcode build).
+
+Packs never reference audio files. Every `intro`/`spoken`/`success`/`hint`/
+`name` line is matched to a clip by a hash of its text — edit a line and
+the pipeline records a new clip for it; until a device syncs the clip, the
+line falls back to on-device text-to-speech.
 
 ## Writing for a 4–5 year old (house rules)
 

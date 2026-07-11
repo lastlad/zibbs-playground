@@ -85,14 +85,10 @@ struct EngineProgressDots: View {
     }
 }
 
-/// Numbers as Zibb speaks them while counting along.
+/// Numbers as Zibb speaks them while counting along. The words live in
+/// app-lines.json so the voice generator can pre-record every count.
 enum SpokenNumber {
-    private static let words = [
-        "zero", "one", "two", "three", "four", "five",
-        "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
-    ]
-
     static func word(_ number: Int) -> String {
-        words.indices.contains(number) ? words[number] : "\(number)"
+        AppLines.shared.countWord(number)
     }
 }

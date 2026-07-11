@@ -1,0 +1,77 @@
+# Keeps Zibb's voice bank in step with the content packs.
+#
+# Whenever a pack (or the app's own spoken lines) changes on any branch, this
+# validates every pack, synthesizes voice clips for lines that don't have one
+# yet (tools/generate_voice.py is incremental — an unchanged line costs
+# nothing), and commits the new clips back to the same branch so the PR you
+# review is exactly what ships to iPads on merge.
+#
+# The commit that this workflow pushes only touches ZibbsPlayground/Voice/**
+# and packs/manifest.json; the actor guard below stops it from triggering
+# itself. Needs the OPENAI_API_KEY repository secret.
+name: Voice bank
+
+on:
+  push:
+    paths:
+      - "ZibbsPlayground/Packs/**"
+      - "packs/*.json"
+      - "ZibbsPlayground/Voice/app-lines.json"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Regenerate every clip (after changing the voice or provider)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: voice-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  voice:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Push events check out a detached SHA by default; we need the
+          # branch itself to commit back to it.
+          ref: ${{ github.ref_name }}
+
+      - name: Validate packs
+        run: python3 tools/validate_pack.py --all
+
+      - name: Generate missing voice clips
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python3 tools/generate_voice.py --all ${{ inputs.force && '--force' || '' }}
+
+      - name: Stage new clips for the review artifact
+        run: |
+          mkdir -p "$RUNNER_TEMP/new-clips"
+          git ls-files --others --exclude-standard -- 'ZibbsPlayground/Voice/clips/*.mp3' \
+            | while read -r clip; do cp "$clip" "$RUNNER_TEMP/new-clips/"; done
+          echo "$(ls "$RUNNER_TEMP/new-clips" | wc -l) new clip(s)"
+
+      - name: Upload new clips so you can listen before merging
+        uses: actions/upload-artifact@v4
+        with:
+          name: new-voice-clips
+          path: ${{ runner.temp }}/new-clips/
+          if-no-files-found: ignore
+
+      - name: Commit clips to this branch
+        run: |
+          git add -A ZibbsPlayground/Voice packs/manifest.json
+          if git diff --cached --quiet; then
+            echo "Voice bank already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Generate voice clips for changed lines"
+          git push origin "HEAD:${{ github.ref_name }}"

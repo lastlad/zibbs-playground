@@ -13,8 +13,8 @@ final class GameContext: ObservableObject {
     /// Set by LevelHostView; games never touch this.
     var onFinish: ((Int) -> Void)?
 
-    private var praiseIndex = Int.random(in: 0..<GameContext.praiseLines.count)
-    private var retryIndex = Int.random(in: 0..<GameContext.retryLines.count)
+    private var praiseIndex = Int.random(in: 0..<max(1, AppLines.shared.praise.count))
+    private var retryIndex = Int.random(in: 0..<max(1, AppLines.shared.retry.count))
 
     init(level: LevelDefinition) {
         self.level = level
@@ -45,8 +45,8 @@ final class GameContext: ObservableObject {
         if let customLine {
             say(customLine)
         } else {
-            praiseIndex = (praiseIndex + 1) % Self.praiseLines.count
-            say(Self.praiseLines[praiseIndex])
+            praiseIndex = (praiseIndex + 1) % AppLines.shared.praise.count
+            say(AppLines.shared.praise[praiseIndex])
         }
     }
 
@@ -56,8 +56,8 @@ final class GameContext: ObservableObject {
         if let hint {
             say(hint)
         } else {
-            retryIndex = (retryIndex + 1) % Self.retryLines.count
-            say(Self.retryLines[retryIndex])
+            retryIndex = (retryIndex + 1) % AppLines.shared.retry.count
+            say(AppLines.shared.retry[retryIndex])
         }
     }
 
@@ -70,20 +70,4 @@ final class GameContext: ObservableObject {
         onFinish?(earnedStars)
     }
 
-    private static let praiseLines = [
-        "Great job, Explorer!",
-        "Amazing!",
-        "You did it!",
-        "Wow, you're so smart!",
-        "That's right!",
-        "Super duper!",
-        "Fantastic!",
-    ]
-
-    private static let retryLines = [
-        "Almost! Try again!",
-        "Hmm, not quite. You can do it!",
-        "Good try! Have another go!",
-        "So close! Try once more!",
-    ]
 }

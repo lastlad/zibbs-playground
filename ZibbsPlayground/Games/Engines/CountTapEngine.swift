@@ -149,7 +149,7 @@ struct CountTapEngine: View {
         context.play(.star)
         let word = SpokenNumber.word(round.count)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            context.say(round.success ?? "That's \(word)! Great counting, Explorer!")
+            context.say(round.success ?? AppLines.shared.countSuccess(word: word))
         }
         if roundIndex == config.rounds.count - 1 {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.6) {

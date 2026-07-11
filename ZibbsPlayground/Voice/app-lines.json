@@ -1,0 +1,33 @@
+{
+  "praise": [
+    "Great job, Explorer!",
+    "Amazing!",
+    "You did it!",
+    "Wow, you're so smart!",
+    "That's right!",
+    "Super duper!",
+    "Fantastic!"
+  ],
+  "retry": [
+    "Almost! Try again!",
+    "Hmm, not quite. You can do it!",
+    "Good try! Have another go!",
+    "So close! Try once more!"
+  ],
+  "homeGreeting": "Hi Explorer! I'm Zibb! Welcome to my playground! Pick a planet, and let's play!",
+  "mapWelcome": "Welcome to {world}! Tap a glowing level to play!",
+  "levelLocked": "Finish the level before this one to unlock it!",
+  "newWorld": "Wow! A new world just landed: {world}! Let's go explore!",
+  "sortComplete": "You sorted everything! Amazing!",
+  "countWords": [
+    "zero", "one", "two", "three", "four", "five",
+    "six", "seven", "eight", "nine", "ten", "eleven", "twelve"
+  ],
+  "countSuccess": "That's {word}! Great counting, Explorer!",
+  "celebration": [
+    "Hooray! You earned {stars} stars!",
+    "Incredible work, Explorer! {stars} shiny stars for you!",
+    "You did it! {stars} stars! I'm so proud of you!"
+  ],
+  "celebrationFinale": "Hooray! You finished every adventure on {world}! You are a true Star Explorer!"
+}
