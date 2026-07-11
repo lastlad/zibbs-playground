@@ -78,7 +78,7 @@ struct WorldMapView: View {
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                Narrator.shared.say("Welcome to \(world.name)! Tap a glowing level to play!")
+                Narrator.shared.say(AppLines.shared.mapWelcome(world: world.name))
             }
         }
     }
@@ -118,7 +118,7 @@ struct WorldMapView: View {
                 appState.open(level: level)
             } else {
                 SoundFX.shared.play(.oops)
-                Narrator.shared.say("Finish the level before this one to unlock it!")
+                Narrator.shared.say(AppLines.shared.levelLocked)
             }
         } label: {
             VStack(spacing: 6) {

@@ -60,3 +60,9 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Voice audition samples (tools/generate_voice.py --audition)
+voice-audition/
+
+# Python
+__pycache__/

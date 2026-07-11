@@ -4,12 +4,20 @@
     {
       "id": "world.numbers",
       "version": 1,
-      "file": "ZibbsPlayground/Packs/world.numbers.json"
+      "file": "ZibbsPlayground/Packs/world.numbers.json",
+      "voiceVersion": 2,
+      "voiceFile": "ZibbsPlayground/Voice/world.numbers.voice.json"
     },
     {
       "id": "world.dinosaurs",
       "version": 1,
-      "file": "ZibbsPlayground/Packs/world.dinosaurs.json"
+      "file": "ZibbsPlayground/Packs/world.dinosaurs.json",
+      "voiceVersion": 2,
+      "voiceFile": "ZibbsPlayground/Voice/world.dinosaurs.voice.json"
     }
-  ]
+  ],
+  "appVoice": {
+    "version": 1,
+    "file": "ZibbsPlayground/Voice/app.voice.json"
+  }
 }

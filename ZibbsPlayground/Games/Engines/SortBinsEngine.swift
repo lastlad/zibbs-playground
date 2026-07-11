@@ -189,7 +189,7 @@ struct SortBinsEngine: View {
         } else {
             finished = true
             context.play(.tada)
-            context.say("You sorted everything! Amazing!")
+            context.say(AppLines.shared.sortComplete)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
                 context.finish()
             }

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "app",
+  "version": 1,
+  "voice": "coral",
+  "clipsPath": "ZibbsPlayground/Voice/clips",
+  "lines": [
+    {
+      "text": "Almost! Try again!",
+      "file": "8fd1452200022c40-b3d3b794.mp3"
+    },
+    {
+      "text": "Amazing!",
+      "file": "161fdcce3e2e7cdb-56a3e4b5.mp3"
+    },
+    {
+      "text": "Eight!",
+      "file": "e6037441cf8d7e46-79ab99fd.mp3"
+    },
+    {
+      "text": "Fantastic!",
+      "file": "767d450e3e1e648d-8759b270.mp3"
+    },
+    {
+      "text": "Finish the level before this one to unlock it!",
+      "file": "6580332beeed9af0-2d78645d.mp3"
+    },
+    {
+      "text": "Five!",
+      "file": "78a058647dc5729e-baecc479.mp3"
+    },
+    {
+      "text": "Four!",
+      "file": "33035c37a9377b53-0e943b74.mp3"
+    },
+    {
+      "text": "Good try! Have another go!",
+      "file": "2047d0065c64026e-268c20c1.mp3"
+    },
+    {
+      "text": "Great job, Explorer!",
+      "file": "a45008ed7383b30d-f3cc1747.mp3"
+    },
+    {
+      "text": "Hi Explorer! I'm Zibb! Welcome to my playground! Pick a planet, and let's play!",
+      "file": "b89b3cf972a14440-dc50768b.mp3"
+    },
+    {
+      "text": "Hmm, not quite. You can do it!",
+      "file": "ff61e08989f21ee6-d234a356.mp3"
+    },
+    {
+      "text": "Hooray! You earned 1 stars!",
+      "file": "723d599b2a7f6dd4-ad223171.mp3"
+    },
+    {
+      "text": "Hooray! You earned 2 stars!",
+      "file": "eb9dd21758cba699-17d9d62e.mp3"
+    },
+    {
+      "text": "Hooray! You earned 3 stars!",
+      "file": "b85968e95af0d608-f14acf60.mp3"
+    },
+    {
+      "text": "Incredible work, Explorer! 1 shiny stars for you!",
+      "file": "84aecd2a5d642274-a3a5d3a0.mp3"
+    },
+    {
+      "text": "Incredible work, Explorer! 2 shiny stars for you!",
+      "file": "c90fffc75d5d6b90-8987cda6.mp3"
+    },
+    {
+      "text": "Incredible work, Explorer! 3 shiny stars for you!",
+      "file": "b669b0de030bdcc4-7352c8c4.mp3"
+    },
+    {
+      "text": "Nine!",
+      "file": "f8f9383813d63b6d-d6d329c6.mp3"
+    },
+    {
+      "text": "One!",
+      "file": "29e71f3dfec8213f-afb3f0a3.mp3"
+    },
+    {
+      "text": "Seven!",
+      "file": "8e6f810b4f4faffb-c422701e.mp3"
+    },
+    {
+      "text": "Six!",
+      "file": "e88dce5d743e4969-04fb7077.mp3"
+    },
+    {
+      "text": "So close! Try once more!",
+      "file": "b626faddca3089a4-11bba289.mp3"
+    },
+    {
+      "text": "Super duper!",
+      "file": "4529efbb4d2b0f52-7d6e4efa.mp3"
+    },
+    {
+      "text": "Ten!",
+      "file": "9eee715bdf2194ad-47f807a8.mp3"
+    },
+    {
+      "text": "That's eight! Great counting, Explorer!",
+      "file": "850b09d0122e06c2-8cdcdb20.mp3"
+    },
+    {
+      "text": "That's five! Great counting, Explorer!",
+      "file": "bf58a0ef382a94ab-caf3b65d.mp3"
+    },
+    {
+      "text": "That's four! Great counting, Explorer!",
+      "file": "a835a0d8ffb6ce13-a8d2c667.mp3"
+    },
+    {
+      "text": "That's nine! Great counting, Explorer!",
+      "file": "8d75d485af957dd4-6c26cea0.mp3"
+    },
+    {
+      "text": "That's one! Great counting, Explorer!",
+      "file": "fc02a989d24cbe39-bb3601bd.mp3"
+    },
+    {
+      "text": "That's right!",
+      "file": "5a8d713905887b93-8592d48c.mp3"
+    },
+    {
+      "text": "That's seven! Great counting, Explorer!",
+      "file": "88858518ac989b5c-237ef880.mp3"
+    },
+    {
+      "text": "That's six! Great counting, Explorer!",
+      "file": "e2601e5921195f41-9e62f120.mp3"
+    },
+    {
+      "text": "That's ten! Great counting, Explorer!",
+      "file": "001782a25e91a23c-f943fb70.mp3"
+    },
+    {
+      "text": "That's three! Great counting, Explorer!",
+      "file": "6dfd3bb35750d862-41bb8899.mp3"
+    },
+    {
+      "text": "That's two! Great counting, Explorer!",
+      "file": "66e764284032e629-39b60c80.mp3"
+    },
+    {
+      "text": "Three!",
+      "file": "41c751d5c3ef44df-d9d429dc.mp3"
+    },
+    {
+      "text": "Two!",
+      "file": "6593dc3e80206f11-cc255a88.mp3"
+    },
+    {
+      "text": "Wow, you're so smart!",
+      "file": "9eedd9dd7eaba752-9934dde9.mp3"
+    },
+    {
+      "text": "You did it!",
+      "file": "7f6dd03e6c9e6901-f3a7ee67.mp3"
+    },
+    {
+      "text": "You did it! 1 stars! I'm so proud of you!",
+      "file": "bfb335d8938c5052-e7cefd43.mp3"
+    },
+    {
+      "text": "You did it! 2 stars! I'm so proud of you!",
+      "file": "3c8cd1546ecc067c-09128e3c.mp3"
+    },
+    {
+      "text": "You did it! 3 stars! I'm so proud of you!",
+      "file": "3e02c75b6f6d36be-3be9779a.mp3"
+    },
+    {
+      "text": "You sorted everything! Amazing!",
+      "file": "ab966adfec98e8ba-585a583a.mp3"
+    }
+  ]
+}

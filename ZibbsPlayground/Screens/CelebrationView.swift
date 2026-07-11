@@ -94,13 +94,9 @@ struct CelebrationView: View {
 
     private var celebrationLine: String {
         if isLastLevel {
-            return "Hooray! You finished every adventure on \(world.name)! You are a true Star Explorer!"
+            return AppLines.shared.celebrationFinale(world: world.name)
         }
-        return [
-            "Hooray! You earned \(stars) stars!",
-            "Incredible work, Explorer! \(stars) shiny stars for you!",
-            "You did it! \(stars) stars! I'm so proud of you!",
-        ].randomElement() ?? "Hooray!"
+        return AppLines.shared.celebration(stars: stars)
     }
 }
 

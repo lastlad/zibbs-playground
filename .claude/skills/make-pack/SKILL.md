@@ -28,9 +28,15 @@ app — no Swift, no Xcode. The app's five template engines play it.
 6. **Publish**: add an entry to `packs/manifest.json` (`id`, `version`,
    `file` path relative to repo root). If updating an existing pack instead
    of creating one, bump `version` in BOTH the pack and the manifest.
-7. Commit and push to the branch you're asked to work on. Once merged to
-   `main`, online devices pick the pack up automatically on their next
-   launch; bundled packs also ship with the next Xcode build.
+   Never touch `voiceVersion`/`voiceFile`/`appVoice` — the voice pipeline
+   owns those.
+7. **Open a PR** (never commit packs straight to `main`): create a branch,
+   commit, push, and open a pull request. The "Voice bank" GitHub Action
+   then records Zibb's voice clips for every new line and commits them to
+   the same branch — mention in your summary that the user can listen via
+   the workflow's `new-voice-clips` artifact before merging. Once merged to
+   `main`, online devices pick up the pack and its voice automatically on
+   their next launch; bundled packs also ship with the next Xcode build.
 
 ## Constraints
 
