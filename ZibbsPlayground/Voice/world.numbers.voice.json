@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "id": "world.numbers",
+  "version": 1,
+  "voice": "coral",
+  "clipsPath": "ZibbsPlayground/Voice/clips",
+  "lines": [
+    {
+      "text": "A longer train! Start at one!",
+      "file": "d752c911bbf48531-792d127d.mp3"
+    },
+    {
+      "text": "All aboard the number train! The numbers got mixed up. Tap them in order, starting from one!",
+      "file": "5a3b0ced2f21134a-9f6c78e7.mp3"
+    },
+    {
+      "text": "All five in order! What a superstar!",
+      "file": "78f52268a6797275-7e1509b7.mp3"
+    },
+    {
+      "text": "Can you find five friendly aliens?",
+      "file": "2a553cbe926ffd5c-e3a3afe3.mp3"
+    },
+    {
+      "text": "Can you find the number three?",
+      "file": "15cb00a162cfc1aa-43c7d5a3.mp3"
+    },
+    {
+      "text": "Can you spot the number two?",
+      "file": "c7f94f071285fa51-f2552d65.mp3"
+    },
+    {
+      "text": "Careful — six and nine love to trick explorers!",
+      "file": "c63e2b4c9873729c-01f95430.mp3"
+    },
+    {
+      "text": "Count all the aliens in each bubble!",
+      "file": "93b537421f54d721-1f380c44.mp3"
+    },
+    {
+      "text": "Count both sides carefully!",
+      "file": "dee276f955381d8d-2bd44276.mp3"
+    },
+    {
+      "text": "Count both sides!",
+      "file": "3f66127ae24c77a3-51e60ba4.mp3"
+    },
+    {
+      "text": "Count carefully! Tap the group with two suns!",
+      "file": "c9a4f9b2d639e763-1ea4f546.mp3"
+    },
+    {
+      "text": "Count carefully! Which group has eight stars?",
+      "file": "dafe289204ac2f61-4ce07d60.mp3"
+    },
+    {
+      "text": "Count down for launch! Three comes first!",
+      "file": "34fca1b98ae219cc-68f3787f.mp3"
+    },
+    {
+      "text": "Count each group! Which has exactly two?",
+      "file": "b51c9500ebc6f330-eb089ec5.mp3"
+    },
+    {
+      "text": "Count each group, then drag it to its number!",
+      "file": "6b96588954fb6b78-d72e3486.mp3"
+    },
+    {
+      "text": "Count each side! More means a bigger number!",
+      "file": "4ea1031cb5941c6a-928164e8.mp3"
+    },
+    {
+      "text": "Count them one by one!",
+      "file": "663abaeb620c8d13-3f143d8c.mp3"
+    },
+    {
+      "text": "Drag each number to its matching group!",
+      "file": "ca154692ccc5badb-29a0f523.mp3"
+    },
+    {
+      "text": "Eight is a lot! Count each star!",
+      "file": "ca8357d9e1b1a319-52dae8f9.mp3"
+    },
+    {
+      "text": "Eight stars! Wow!",
+      "file": "5a2b5526ae32903f-d1b7ba64.mp3"
+    },
+    {
+      "text": "Every number has a best friend — a group that's just its size! Drag each number to its matching group.",
+      "file": "3c62c172583fc975-ab681af8.mp3"
+    },
+    {
+      "text": "Fewer means the smaller group!",
+      "file": "7cbee9f8a7c72fcc-3ad4ab75.mp3"
+    },
+    {
+      "text": "Find the number seven!",
+      "file": "a28c88176484292a-08b23010.mp3"
+    },
+    {
+      "text": "Five aliens saying hello!",
+      "file": "5857440c37d1b1a2-3db6f32d.mp3"
+    },
+    {
+      "text": "Five friendly aliens!",
+      "file": "f502f67b87bee128-5a53a1a8.mp3"
+    },
+    {
+      "text": "Five shiny stars!",
+      "file": "a472ea6f14aa82db-0bb49eb8.mp3"
+    },
+    {
+      "text": "Five stars is more than three!",
+      "file": "382525c604466abe-128a0fac.mp3"
+    },
+    {
+      "text": "Five!",
+      "file": "78a058647dc5729e-fde23146.mp3"
+    },
+    {
+      "text": "Five, four, three, two, one... BLAST OFF! Whoooosh!",
+      "file": "f766659844859e0b-7f051970.mp3"
+    },
+    {
+      "text": "Four comets! What a show!",
+      "file": "8aba1a50664d1088-eaa0a43d.mp3"
+    },
+    {
+      "text": "Four is more than one!",
+      "file": "4f657f8695c24aa3-bc2f4be0.mp3"
+    },
+    {
+      "text": "Four planets!",
+      "file": "bc8679d0848b73fe-d6cfa7e6.mp3"
+    },
+    {
+      "text": "Four twinkly stars!",
+      "file": "3295b26a78716ce3-0c2cb6bb.mp3"
+    },
+    {
+      "text": "Four!",
+      "file": "33035c37a9377b53-079b0165.mp3"
+    },
+    {
+      "text": "Four! You know all your numbers!",
+      "file": "baa1ff0e53a87397-91bf0ca6.mp3"
+    },
+    {
+      "text": "Hooray! You finished every adventure on Number Nebula! You are a true Star Explorer!",
+      "file": "8512d97c7bfb93c1-817f55fb.mp3"
+    },
+    {
+      "text": "It's the great number quiz! Show me everything you've learned, Explorer. Big numbers ahead!",
+      "file": "41b2bc0cf813cf17-98d51e91.mp3"
+    },
+    {
+      "text": "Keep counting! Four is what we want!",
+      "file": "05a7dd08ffcf6c90-4f051369.mp3"
+    },
+    {
+      "text": "Last one! Find six planets!",
+      "file": "4f819de5e1937b3d-37cf4210.mp3"
+    },
+    {
+      "text": "Last one! Find the number four!",
+      "file": "e0f9636b975875fb-5f4dfa0b.mp3"
+    },
+    {
+      "text": "Last one! Which side has fewer aliens?",
+      "file": "dfc74047b25f6fff-69127bfb.mp3"
+    },
+    {
+      "text": "Look at both sides! Which has more rockets?",
+      "file": "6fb6dcd6d99b2d2c-0c505d53.mp3"
+    },
+    {
+      "text": "Look for the number five!",
+      "file": "aea7ed342296c008-e3ba2045.mp3"
+    },
+    {
+      "text": "Look for the number four!",
+      "file": "65bf58bf37717766-e669f7d8.mp3"
+    },
+    {
+      "text": "Look for the number seven!",
+      "file": "49a46ddafdb8cb93-2294f3af.mp3"
+    },
+    {
+      "text": "Look for the number three!",
+      "file": "316d1d64b4e907d7-ec5e5772.mp3"
+    },
+    {
+      "text": "More comets! Tap and count them all!",
+      "file": "3b8b4742f856d14c-1638e908.mp3"
+    },
+    {
+      "text": "Nine is more than six!",
+      "file": "453bdd54bf3cdf89-eb6afe4d.mp3"
+    },
+    {
+      "text": "Nine! Almost at the top!",
+      "file": "9e72afdc9f7d2d6b-71f8d6bc.mp3"
+    },
+    {
+      "text": "Now count down from five!",
+      "file": "13835ad17f646bf0-dc6e309c.mp3"
+    },
+    {
+      "text": "Now find the group with three moons!",
+      "file": "40f8680d598b8e0e-5145f2b7.mp3"
+    },
+    {
+      "text": "Now find the number one!",
+      "file": "6829b7e9117e07f5-da4c5e53.mp3"
+    },
+    {
+      "text": "Now for BIG numbers! Let's count higher than ever before. Tap everything you see!",
+      "file": "d179688bf8443de1-2036a00d.mp3"
+    },
+    {
+      "text": "Numbers are hiding among the stars! When I say a number, tap it as fast as you can!",
+      "file": "45be5ee79dcdc14d-fa2cedb9.mp3"
+    },
+    {
+      "text": "One is a tall straight line!",
+      "file": "e1b37e4298f4b3c1-891abfca.mp3"
+    },
+    {
+      "text": "One rocket!",
+      "file": "9386c8c3c3df7945-f5de4e8d.mp3"
+    },
+    {
+      "text": "One!",
+      "file": "29e71f3dfec8213f-81b6c3f6.mp3"
+    },
+    {
+      "text": "One, two, three! The train is rolling!",
+      "file": "30c3fda6ae5d49d8-2a63c49b.mp3"
+    },
+    {
+      "text": "One, two, three, four! Choo choo!",
+      "file": "5c5592162fff9a3b-802fa282.mp3"
+    },
+    {
+      "text": "Rockets count BACKWARDS before they launch! Tap the numbers from biggest to smallest, and blast off!",
+      "file": "958c6cf83be3fba0-af395a7d.mp3"
+    },
+    {
+      "text": "Seven planets! Can you count that high?",
+      "file": "228496865049e4fc-a65f55a1.mp3"
+    },
+    {
+      "text": "Seven planets! That's so high!",
+      "file": "58affe5e06158f76-5582040e.mp3"
+    },
+    {
+      "text": "Seven! Great start!",
+      "file": "386c5616d3c828c2-8db591c3.mp3"
+    },
+    {
+      "text": "Six aliens are waving! Count them all!",
+      "file": "a76aa77e26e2c14e-00317383.mp3"
+    },
+    {
+      "text": "Six comets! Amazing!",
+      "file": "22aec9d7e199c988-bc0210e7.mp3"
+    },
+    {
+      "text": "Six friendly aliens!",
+      "file": "735960245f9c79b5-03ffd3d1.mp3"
+    },
+    {
+      "text": "Six is a big number! Count carefully!",
+      "file": "bb47b2917b0995fc-a231864b.mp3"
+    },
+    {
+      "text": "Six planets! You're a counting champion!",
+      "file": "87263fde03df9fbd-ceb2ab7a.mp3"
+    },
+    {
+      "text": "So many comets! Count every one!",
+      "file": "0fa09bfc6bc6e52a-a96981cb.mp3"
+    },
+    {
+      "text": "Some groups are big and some are small! Look at both sides and tell me which has more, and which has fewer.",
+      "file": "7a02936e90943fd9-343460c1.mp3"
+    },
+    {
+      "text": "TEN! You found ten! You know ALL the numbers, Explorer!",
+      "file": "725b97ea378f2d33-d705bebe.mp3"
+    },
+    {
+      "text": "Tap each comet and count!",
+      "file": "c277d4b555abb6ac-9460d231.mp3"
+    },
+    {
+      "text": "Tap each star and count to five!",
+      "file": "e81dd00d2379f954-824fad2d.mp3"
+    },
+    {
+      "text": "Tap the numbers in order! One comes first!",
+      "file": "47317ef2dddad48a-658ab21c.mp3"
+    },
+    {
+      "text": "Ten has two parts — a one and a zero!",
+      "file": "e1aad42cd15487e2-9bc3d8af.mp3"
+    },
+    {
+      "text": "That's one! Number one!",
+      "file": "c9aff645e775fc66-a51c9041.mp3"
+    },
+    {
+      "text": "That's two suns!",
+      "file": "acd88d488adc3b33-aed97f27.mp3"
+    },
+    {
+      "text": "The biggest one of all! Find the number ten!",
+      "file": "782c2c378b278e5a-9aaebb91.mp3"
+    },
+    {
+      "text": "The longest train yet! You can do it!",
+      "file": "9c211232bc56466c-eae73f40.mp3"
+    },
+    {
+      "text": "The sorting station is open! Count what's in each group, then drag it to its number!",
+      "file": "4b1abee3a0e686a9-c6439a36.mp3"
+    },
+    {
+      "text": "Three cars!",
+      "file": "3c780a071f8e3a7a-2eae7cfe.mp3"
+    },
+    {
+      "text": "Three comets flew past!",
+      "file": "cb6bcc3dbe9766b4-0c2d5a9b.mp3"
+    },
+    {
+      "text": "Three fish!",
+      "file": "11476526ed3b6ec2-4f844aad.mp3"
+    },
+    {
+      "text": "Three is fewer than six! Fewer means less!",
+      "file": "6b460d319aed03bf-7149d71a.mp3"
+    },
+    {
+      "text": "Three ladybugs!",
+      "file": "81153cb2e7abb188-beae9e50.mp3"
+    },
+    {
+      "text": "Three stars!",
+      "file": "bda33a9fe270c3cf-85c88cae.mp3"
+    },
+    {
+      "text": "Three!",
+      "file": "41c751d5c3ef44df-45b7a20a.mp3"
+    },
+    {
+      "text": "Three, two, one... blast off!",
+      "file": "926e1237a226a3bf-0bfa9ec0.mp3"
+    },
+    {
+      "text": "Time for a counting hunt! Count what's inside each bubble, and tap the group I ask for!",
+      "file": "3c2832dfa39db648-fa8b581d.mp3"
+    },
+    {
+      "text": "Tricky one! Which side has fewer moons?",
+      "file": "09d9cf649c9ef172-b63e88bb.mp3"
+    },
+    {
+      "text": "Two apples!",
+      "file": "77b66df931e548a0-a57ac07a.mp3"
+    },
+    {
+      "text": "Two balloons!",
+      "file": "b9298204a569a863-1b59089c.mp3"
+    },
+    {
+      "text": "Two comets! Zoom, zoom!",
+      "file": "7dae64e1a25859e1-4bec1774.mp3"
+    },
+    {
+      "text": "Two is fewer than four! You've got it!",
+      "file": "210a1d0fbe3672b6-5106aaeb.mp3"
+    },
+    {
+      "text": "Two looks like a swan swimming!",
+      "file": "5138478b4c3f5b18-bed9afd5.mp3"
+    },
+    {
+      "text": "Two moons!",
+      "file": "030a51317bbe0478-22d032e1.mp3"
+    },
+    {
+      "text": "Two socks!",
+      "file": "2f3b9c36d25034f4-9d21000d.mp3"
+    },
+    {
+      "text": "Two!",
+      "file": "6593dc3e80206f11-7ebe6d72.mp3"
+    },
+    {
+      "text": "Welcome to Number Nebula! Tap a glowing level to play!",
+      "file": "79cc2eece1b10798-d43f2373.mp3"
+    },
+    {
+      "text": "Welcome to the Number Nebula, Explorer! Look, comets are zooming by! Tap each one and let's count them together.",
+      "file": "7995c840c6e3d3b1-639682bb.mp3"
+    },
+    {
+      "text": "Where is the number five hiding?",
+      "file": "706b410bf3185e70-553191b6.mp3"
+    },
+    {
+      "text": "Where is the number nine?",
+      "file": "7f2f298e9b9a219d-d5ece5d7.mp3"
+    },
+    {
+      "text": "Which bubble looks fuller?",
+      "file": "e784c4f5dbf98937-63471095.mp3"
+    },
+    {
+      "text": "Which group has four stars?",
+      "file": "c5a0a15c804cd451-91dcb8f5.mp3"
+    },
+    {
+      "text": "Which side has more butterflies?",
+      "file": "ab93a70d44603d51-3408eb75.mp3"
+    },
+    {
+      "text": "Which side has more planets?",
+      "file": "cd6eed025b9a3573-111a64f3.mp3"
+    },
+    {
+      "text": "Which side has more stars?",
+      "file": "bf0c2f522882d4da-2b9942af.mp3"
+    },
+    {
+      "text": "Wow! A new world just landed: Number Nebula! Let's go explore!",
+      "file": "7a8f0adcbe4cc35c-9e2a2828.mp3"
+    },
+    {
+      "text": "Yes! Five is more than two!",
+      "file": "700d4ab31217403c-8e424170.mp3"
+    },
+    {
+      "text": "Yes! One, two, three moons!",
+      "file": "b7feeb247f0ba19e-2df3058b.mp3"
+    },
+    {
+      "text": "Yes! That's three!",
+      "file": "07bbde72b536ecbb-219d5eb7.mp3"
+    },
+    {
+      "text": "Yes! That's two!",
+      "file": "dc2c4678e063979c-c97df40f.mp3"
+    },
+    {
+      "text": "You found five!",
+      "file": "1053eaa729cea847-0c6e5185.mp3"
+    }
+  ]
+}

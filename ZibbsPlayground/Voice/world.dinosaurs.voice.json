@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "id": "world.dinosaurs",
+  "version": 1,
+  "voice": "coral",
+  "clipsPath": "ZibbsPlayground/Voice/clips",
+  "lines": [
+    {
+      "text": "A big long neck!",
+      "file": "ce5426c773df094e-f2a65771.mp3"
+    },
+    {
+      "text": "A bone is white with two bumpy ends!",
+      "file": "4afaa86b8f382722-a90b8d7c.mp3"
+    },
+    {
+      "text": "A dino bone! You're a real fossil finder!",
+      "file": "e0e24bc12050e5d7-676ea711.mp3"
+    },
+    {
+      "text": "A dinosaur stomped through the valley! Follow the trail and count everything it left behind. Big numbers ahead!",
+      "file": "4696447f222f3397-18cbcd21.mp3"
+    },
+    {
+      "text": "A great big T. rex!",
+      "file": "486c26911618cadd-6dd4b027.mp3"
+    },
+    {
+      "text": "A little dino!",
+      "file": "67b03f478eaf1e82-9dc7b1f4.mp3"
+    },
+    {
+      "text": "An egg!",
+      "file": "483acb5aca71f17c-f9ed5961.mp3"
+    },
+    {
+      "text": "Bones on the trail! Count them all!",
+      "file": "e33679e05ed2469c-4b9bc1a3.mp3"
+    },
+    {
+      "text": "Can you find the T. rex?",
+      "file": "015b324dd7f0f9e2-86d66ffd.mp3"
+    },
+    {
+      "text": "Chomp! T. rex eats meat!",
+      "file": "dd96796ee34b74c4-bdcdd79e.mp3"
+    },
+    {
+      "text": "Count both groups!",
+      "file": "5d4f141672a1330d-b8e703ed.mp3"
+    },
+    {
+      "text": "Count both sides carefully!",
+      "file": "dee276f955381d8d-f85021d5.mp3"
+    },
+    {
+      "text": "Count carefully! Which group has eight eggs?",
+      "file": "4c33f695b15b3111-3d7a95f9.mp3"
+    },
+    {
+      "text": "Count carefully, then find the nest with that number!",
+      "file": "5465339232fa34bf-99b38ab6.mp3"
+    },
+    {
+      "text": "Count down for the volcano! Three comes first!",
+      "file": "274cf8b5f3f86b7b-f9877571.mp3"
+    },
+    {
+      "text": "Count each side! More means a bigger number!",
+      "file": "4ea1031cb5941c6a-7ae71ea0.mp3"
+    },
+    {
+      "text": "Crack! It's hatching!",
+      "file": "133d8800f3758676-8b92b12a.mp3"
+    },
+    {
+      "text": "Dinner time! Who eats what?",
+      "file": "dedb507b753d7987-8f0d1aac.mp3"
+    },
+    {
+      "text": "Dino diggers look for bones! Can you find one?",
+      "file": "3fba2ea1c5d6a560-bf9e7a56.mp3"
+    },
+    {
+      "text": "Dinosaurs are hiding in the valley! When I call one, tap it as fast as you can!",
+      "file": "75bec38374b848e4-c0d30c53.mp3"
+    },
+    {
+      "text": "Egg, hatchling, big dino! It grew up!",
+      "file": "5116a9639aa9e7e0-4e098cd4.mp3"
+    },
+    {
+      "text": "Eight eggs! What a big nest!",
+      "file": "6bd05472ef0ff2fe-17248cd5.mp3"
+    },
+    {
+      "text": "Eight is a lot! Count each egg!",
+      "file": "89521515bc2421ac-7e53d293.mp3"
+    },
+    {
+      "text": "Every big dinosaur starts as a tiny egg! Tap the pictures in order to watch a dino grow up.",
+      "file": "fa2fcbe69d291217-e21360a6.mp3"
+    },
+    {
+      "text": "Fewer means the smaller group!",
+      "file": "7cbee9f8a7c72fcc-fe4193db.mp3"
+    },
+    {
+      "text": "First one! Find the T. rex!",
+      "file": "810417258e07952a-e4445e02.mp3"
+    },
+    {
+      "text": "Five leaves! The long necks will feast!",
+      "file": "5ace03dcd3d7585f-5adb325a.mp3"
+    },
+    {
+      "text": "Five stomps! Stomp, stomp, stomp!",
+      "file": "2db8037586f5f8fe-c6945ad5.mp3"
+    },
+    {
+      "text": "Five!",
+      "file": "78a058647dc5729e-439ad8c5.mp3"
+    },
+    {
+      "text": "Five, four, three, two, one... BOOM! The dinos all cheered!",
+      "file": "89c55dd16e52b589-bf85775e.mp3"
+    },
+    {
+      "text": "Footprints! Tap each one and count!",
+      "file": "a10db4e5b3067042-d2b32bdc.mp3"
+    },
+    {
+      "text": "Four big stomps! A dinosaur walked here!",
+      "file": "34fa6f11ddf0a60c-24d5d499.mp3"
+    },
+    {
+      "text": "Four is more than one! Stomp, stomp!",
+      "file": "8b1922c125e1be80-b8f63860.mp3"
+    },
+    {
+      "text": "Four!",
+      "file": "33035c37a9377b53-1f161609.mp3"
+    },
+    {
+      "text": "From tiny egg to mighty T. rex! Roar!",
+      "file": "baba73a5ba7570f0-de069ea9.mp3"
+    },
+    {
+      "text": "Hooray! You finished every adventure on Dino Valley! You are a true Star Explorer!",
+      "file": "e6818a35a7b62096-6c95e69f.mp3"
+    },
+    {
+      "text": "How does a dino grow? The egg comes first!",
+      "file": "86903851f6a46bf1-022de215.mp3"
+    },
+    {
+      "text": "It's the great dino quiz! Show me everything you've learned, Explorer. The dinosaurs are all watching!",
+      "file": "b723e074dd343983-977ec0db.mp3"
+    },
+    {
+      "text": "Last one! Find the rumbly volcano!",
+      "file": "0d4aa9bc4561ee07-0f171663.mp3"
+    },
+    {
+      "text": "Last one! Which side has fewer eggs?",
+      "file": "2a9499e7b48e1a63-e02320da.mp3"
+    },
+    {
+      "text": "Leaves! Munch, munch, munch!",
+      "file": "779bd85249f321d9-9437f664.mp3"
+    },
+    {
+      "text": "Look at both nests! Which has more eggs?",
+      "file": "1f6121e029984671-1cdf4785.mp3"
+    },
+    {
+      "text": "Look for the neck that reaches way up high!",
+      "file": "663d77c1ce3f91a5-c0dce8a2.mp3"
+    },
+    {
+      "text": "More eggs! Tap and count them all!",
+      "file": "ed7da343446a3ca5-9ecbf276.mp3"
+    },
+    {
+      "text": "Munch! The long neck loves leaves!",
+      "file": "c241ec1119e0f919-fb53cdc8.mp3"
+    },
+    {
+      "text": "Nine is more than six! Amazing counting!",
+      "file": "f58c780f6945d187-e2cfcb64.mp3"
+    },
+    {
+      "text": "Now count down from five!",
+      "file": "13835ad17f646bf0-f7f22f84.mp3"
+    },
+    {
+      "text": "Now find the dinosaur with the long, long neck!",
+      "file": "d9757160748d26fd-dc59d9ce.mp3"
+    },
+    {
+      "text": "Now watch a T. rex grow! Start with the egg!",
+      "file": "a0e34c791b70340e-97119c04.mp3"
+    },
+    {
+      "text": "One!",
+      "file": "29e71f3dfec8213f-b8a7dc4a.mp3"
+    },
+    {
+      "text": "Roar! That's the T. rex!",
+      "file": "1059e47fea074c18-bb88edaf.mp3"
+    },
+    {
+      "text": "Roar! You found the T. rex!",
+      "file": "f9978a9973a19e84-b09ee836.mp3"
+    },
+    {
+      "text": "Seven eggs! Can you count that high?",
+      "file": "71f4bb1d14714ca0-f9c843b0.mp3"
+    },
+    {
+      "text": "Seven eggs! That's a whole dino family!",
+      "file": "e003e5852172e22d-b60eb641.mp3"
+    },
+    {
+      "text": "Six dino bones! What a find!",
+      "file": "1fb38914babdf5fe-48d3d05a.mp3"
+    },
+    {
+      "text": "Snap! The crocodile catches a fish!",
+      "file": "8cebe9e7fdd2a0b2-08daf9a3.mp3"
+    },
+    {
+      "text": "Some nests are full and some are almost empty! Look at both sides and tell me which has more, and which has fewer.",
+      "file": "0759e8892cbee1b4-5036d632.mp3"
+    },
+    {
+      "text": "TEN stomps! You did it, Explorer! All the dinosaurs are roaring for you!",
+      "file": "5690387f8bdfdbbd-83be484e.mp3"
+    },
+    {
+      "text": "Tap each egg and count!",
+      "file": "83f0b6bc506d0b38-a1826229.mp3"
+    },
+    {
+      "text": "Tap each footprint and count to five!",
+      "file": "44700b3bc0e92bc9-c05d127d.mp3"
+    },
+    {
+      "text": "Ten is the biggest! Count every footprint!",
+      "file": "48f6fd26efe1c802-fa59aff1.mp3"
+    },
+    {
+      "text": "That's the egg! Shhh, a baby dino is sleeping inside!",
+      "file": "5b547afea9c788bc-6118ef00.mp3"
+    },
+    {
+      "text": "The T. rex stands tall with big teeth!",
+      "file": "50f809a02caad39e-4e31e772.mp3"
+    },
+    {
+      "text": "The T. rex stands up tall with big teeth!",
+      "file": "7ad47cae2135f934-d163a1bc.mp3"
+    },
+    {
+      "text": "The biggest count of all! Find ten footprints!",
+      "file": "20722d8f7f5584b0-c090a83a.mp3"
+    },
+    {
+      "text": "The butterfly sips the sweet flower!",
+      "file": "38acf8e8f6ecc364-e6a34c79.mp3"
+    },
+    {
+      "text": "The dinosaurs are hungry! Drag each snack to the friend who loves it most.",
+      "file": "051e312b28f56e89-cc866030.mp3"
+    },
+    {
+      "text": "The egg is safe and cozy in the nest!",
+      "file": "04e0117fa82d9449-682be10a.mp3"
+    },
+    {
+      "text": "The egg is smooth and white, not bumpy like a rock!",
+      "file": "22a3cbee1b5e8a27-fe1cb29e.mp3"
+    },
+    {
+      "text": "The little lizard catches the bug!",
+      "file": "959b1f9470bca574-e6dc76ed.mp3"
+    },
+    {
+      "text": "The long neck reaches up high for green food!",
+      "file": "3beeb34c81e1e852-cffad242.mp3"
+    },
+    {
+      "text": "The long necks are hungry! Which side has more leaves?",
+      "file": "c5bdc92eabd7af14-58b98f4f.mp3"
+    },
+    {
+      "text": "The mama dinos are sorting their nests! Count what's in each group, then drag it to the right nest.",
+      "file": "219f8bcd333cddb4-9d97bb10.mp3"
+    },
+    {
+      "text": "The volcano is getting rumbly! Tap the numbers from biggest to smallest and count down to the big boom!",
+      "file": "856f723b7de380e6-7b46768d.mp3"
+    },
+    {
+      "text": "The volcano is the mountain with hot orange lava on top!",
+      "file": "37e28b837188da2c-db320749.mp3"
+    },
+    {
+      "text": "The volcano! Rumble, rumble, boom!",
+      "file": "1d3ea4bd995883f3-f8f95134.mp3"
+    },
+    {
+      "text": "Three bones!",
+      "file": "cfb3aa743323815e-acb1e2c7.mp3"
+    },
+    {
+      "text": "Three eggs! The mamas will be so happy!",
+      "file": "e05832c9010f068f-35207b6b.mp3"
+    },
+    {
+      "text": "Three is fewer than six! Fewer means less!",
+      "file": "6b460d319aed03bf-1d8a830a.mp3"
+    },
+    {
+      "text": "Three leaves!",
+      "file": "9c39986c6752146a-80954baa.mp3"
+    },
+    {
+      "text": "Three long necks!",
+      "file": "59b855e992ca3ea5-e982cf82.mp3"
+    },
+    {
+      "text": "Three!",
+      "file": "41c751d5c3ef44df-ee3c1de1.mp3"
+    },
+    {
+      "text": "Three, two, one... BOOM! Rumble rumble!",
+      "file": "ca8d34b9406442cd-c5472aa9.mp3"
+    },
+    {
+      "text": "Tricky one! Which side has fewer bones?",
+      "file": "468f4e1e34595b6b-a7484b8b.mp3"
+    },
+    {
+      "text": "Two T. rexes!",
+      "file": "bcc5f18dc303d13f-8675e8b1.mp3"
+    },
+    {
+      "text": "Two dino eggs! Wobble, wobble!",
+      "file": "ae12d6123588db2d-9a1aca46.mp3"
+    },
+    {
+      "text": "Two eggs!",
+      "file": "5204417f3521e9a4-1c7feab2.mp3"
+    },
+    {
+      "text": "Two footprints!",
+      "file": "83686506d80c9297-c850fdf1.mp3"
+    },
+    {
+      "text": "Two is fewer than four! You've got it!",
+      "file": "210a1d0fbe3672b6-fd81772b.mp3"
+    },
+    {
+      "text": "Two!",
+      "file": "6593dc3e80206f11-a2e5c60a.mp3"
+    },
+    {
+      "text": "Welcome to Dino Valley! Tap a glowing level to play!",
+      "file": "d717230a54c0afca-22407510.mp3"
+    },
+    {
+      "text": "Welcome to Dino Valley, Explorer! The dinosaurs left eggs everywhere! Tap each one and count with me.",
+      "file": "ae24188c44805c84-fa8ffa8a.mp3"
+    },
+    {
+      "text": "What does the long neck dinosaur love to eat?",
+      "file": "57b5e1c6e5cb3569-78e26bf3.mp3"
+    },
+    {
+      "text": "Where is the dinosaur egg hiding?",
+      "file": "539247f13bbc60fa-e09a280e.mp3"
+    },
+    {
+      "text": "Which group has more bones?",
+      "file": "e45cba18b714da3f-4487e56f.mp3"
+    },
+    {
+      "text": "Which side has more footprints?",
+      "file": "adb2e275e59fc88e-993c8102.mp3"
+    },
+    {
+      "text": "Which side looks fuller?",
+      "file": "009b4c8a386cd977-c9687669.mp3"
+    },
+    {
+      "text": "Wow! A new world just landed: Dino Valley! Let's go explore!",
+      "file": "f3f75a863b033abe-eaa91e57.mp3"
+    },
+    {
+      "text": "Yes! Five eggs is more than two!",
+      "file": "b7b9ec6fd07ceaaf-106d7cf1.mp3"
+    },
+    {
+      "text": "Yes! Its neck is long like a slide!",
+      "file": "78cf3bbdcb5fcc37-c179a305.mp3"
+    }
+  ]
+}
