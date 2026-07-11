@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "world.dinosaurs",
-  "version": 1,
+  "version": 2,
   "voice": "coral",
   "clipsPath": "ZibbsPlayground/Voice/clips",
   "lines": [
@@ -119,7 +119,7 @@
     },
     {
       "text": "Five!",
-      "file": "78a058647dc5729e-439ad8c5.mp3"
+      "file": "78a058647dc5729e-baecc479.mp3"
     },
     {
       "text": "Five, four, three, two, one... BOOM! The dinos all cheered!",
@@ -139,7 +139,7 @@
     },
     {
       "text": "Four!",
-      "file": "33035c37a9377b53-1f161609.mp3"
+      "file": "33035c37a9377b53-0e943b74.mp3"
     },
     {
       "text": "From tiny egg to mighty T. rex! Roar!",
@@ -203,7 +203,7 @@
     },
     {
       "text": "One!",
-      "file": "29e71f3dfec8213f-b8a7dc4a.mp3"
+      "file": "29e71f3dfec8213f-afb3f0a3.mp3"
     },
     {
       "text": "Roar! That's the T. rex!",
@@ -331,7 +331,7 @@
     },
     {
       "text": "Three!",
-      "file": "41c751d5c3ef44df-ee3c1de1.mp3"
+      "file": "41c751d5c3ef44df-d9d429dc.mp3"
     },
     {
       "text": "Three, two, one... BOOM! Rumble rumble!",
@@ -363,7 +363,7 @@
     },
     {
       "text": "Two!",
-      "file": "6593dc3e80206f11-a2e5c60a.mp3"
+      "file": "6593dc3e80206f11-cc255a88.mp3"
     },
     {
       "text": "Welcome to Dino Valley! Tap a glowing level to play!",

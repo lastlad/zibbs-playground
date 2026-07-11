@@ -180,6 +180,9 @@ def synthesize(text, voice, api_key):
 
 # --- Bank maintenance -------------------------------------------------------
 
+PENDING = "<pending>"
+
+
 def load_index(unit_id):
     path = VOICE_DIR / f"{unit_id}.voice.json"
     try:
@@ -188,23 +191,39 @@ def load_index(unit_id):
         return None
 
 
-def process_unit(unit_id, lines, voice, args, api_key, stats):
+def load_bank(voice, force):
+    """text → clip filename across every existing index, so a line shared by
+    several units (the counting words, say) is recorded exactly once. Only
+    clips made with the current voice count; --force starts from scratch."""
+    if force:
+        return {}
+    bank = {}
+    for path in sorted(VOICE_DIR.glob("*.voice.json")):
+        index = load_index(path.name.removesuffix(".voice.json")) or {}
+        if index.get("voice") != voice:
+            continue
+        for entry in index.get("lines", []):
+            if (CLIPS_DIR / entry["file"]).is_file():
+                bank.setdefault(entry["text"], entry["file"])
+    return bank
+
+
+def process_unit(unit_id, lines, voice, args, api_key, stats, bank):
     """Bring one unit (a pack id or "app") up to date. Returns its index."""
     old = load_index(unit_id) or {}
-    old_files = {entry["text"]: entry["file"] for entry in old.get("lines", [])}
-    reuse = old.get("voice") == voice and not args.force
 
     entries = []
     generated = []
     for text in sorted(lines):
-        existing = old_files.get(text)
-        if reuse and existing and (CLIPS_DIR / existing).is_file():
+        existing = bank.get(text)
+        if existing:
             entries.append({"text": text, "file": existing})
             continue
         generated.append(text)
         stats["chars"] += len(text)
         if args.dry_run:
-            entries.append({"text": text, "file": "<pending>"})
+            entries.append({"text": text, "file": PENDING})
+            bank[text] = PENDING
             continue
         audio = synthesize(text, voice, api_key)
         audio_hash = hashlib.sha256(audio).hexdigest()[:8]
@@ -212,6 +231,7 @@ def process_unit(unit_id, lines, voice, args, api_key, stats):
         CLIPS_DIR.mkdir(parents=True, exist_ok=True)
         (CLIPS_DIR / filename).write_bytes(audio)
         entries.append({"text": text, "file": filename})
+        bank[text] = filename
         print(f"  + {filename}  {text}")
 
     changed = (
@@ -342,10 +362,11 @@ def main():
         sys.exit(f"cannot read {APP_LINES}: {exc}")
 
     stats = {"chars": 0, "units": []}
-    indexes = [process_unit("app", app_lines(app), args.voice, args, api_key, stats)]
+    bank = load_bank(args.voice, args.force)
+    indexes = [process_unit("app", app_lines(app), args.voice, args, api_key, stats, bank)]
     for pack in discover_packs():
         indexes.append(process_unit(pack["id"], pack_lines(pack, app),
-                                    args.voice, args, api_key, stats))
+                                    args.voice, args, api_key, stats, bank))
 
     pruned = prune_orphans(indexes, args.dry_run)
     update_manifest(indexes, args.dry_run)

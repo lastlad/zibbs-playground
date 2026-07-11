@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "world.numbers",
-  "version": 1,
+  "version": 2,
   "voice": "coral",
   "clipsPath": "ZibbsPlayground/Voice/clips",
   "lines": [
@@ -39,7 +39,7 @@
     },
     {
       "text": "Count both sides carefully!",
-      "file": "dee276f955381d8d-2bd44276.mp3"
+      "file": "dee276f955381d8d-f85021d5.mp3"
     },
     {
       "text": "Count both sides!",
@@ -67,7 +67,7 @@
     },
     {
       "text": "Count each side! More means a bigger number!",
-      "file": "4ea1031cb5941c6a-928164e8.mp3"
+      "file": "4ea1031cb5941c6a-7ae71ea0.mp3"
     },
     {
       "text": "Count them one by one!",
@@ -91,7 +91,7 @@
     },
     {
       "text": "Fewer means the smaller group!",
-      "file": "7cbee9f8a7c72fcc-3ad4ab75.mp3"
+      "file": "7cbee9f8a7c72fcc-fe4193db.mp3"
     },
     {
       "text": "Find the number seven!",
@@ -115,7 +115,7 @@
     },
     {
       "text": "Five!",
-      "file": "78a058647dc5729e-fde23146.mp3"
+      "file": "78a058647dc5729e-baecc479.mp3"
     },
     {
       "text": "Five, four, three, two, one... BLAST OFF! Whoooosh!",
@@ -139,7 +139,7 @@
     },
     {
       "text": "Four!",
-      "file": "33035c37a9377b53-079b0165.mp3"
+      "file": "33035c37a9377b53-0e943b74.mp3"
     },
     {
       "text": "Four! You know all your numbers!",
@@ -203,7 +203,7 @@
     },
     {
       "text": "Now count down from five!",
-      "file": "13835ad17f646bf0-dc6e309c.mp3"
+      "file": "13835ad17f646bf0-f7f22f84.mp3"
     },
     {
       "text": "Now find the group with three moons!",
@@ -231,7 +231,7 @@
     },
     {
       "text": "One!",
-      "file": "29e71f3dfec8213f-81b6c3f6.mp3"
+      "file": "29e71f3dfec8213f-afb3f0a3.mp3"
     },
     {
       "text": "One, two, three! The train is rolling!",
@@ -339,7 +339,7 @@
     },
     {
       "text": "Three is fewer than six! Fewer means less!",
-      "file": "6b460d319aed03bf-7149d71a.mp3"
+      "file": "6b460d319aed03bf-1d8a830a.mp3"
     },
     {
       "text": "Three ladybugs!",
@@ -351,7 +351,7 @@
     },
     {
       "text": "Three!",
-      "file": "41c751d5c3ef44df-45b7a20a.mp3"
+      "file": "41c751d5c3ef44df-d9d429dc.mp3"
     },
     {
       "text": "Three, two, one... blast off!",
@@ -379,7 +379,7 @@
     },
     {
       "text": "Two is fewer than four! You've got it!",
-      "file": "210a1d0fbe3672b6-5106aaeb.mp3"
+      "file": "210a1d0fbe3672b6-fd81772b.mp3"
     },
     {
       "text": "Two looks like a swan swimming!",
@@ -395,7 +395,7 @@
     },
     {
       "text": "Two!",
-      "file": "6593dc3e80206f11-7ebe6d72.mp3"
+      "file": "6593dc3e80206f11-cc255a88.mp3"
     },
     {
       "text": "Welcome to Number Nebula! Tap a glowing level to play!",
