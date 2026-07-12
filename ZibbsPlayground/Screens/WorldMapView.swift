@@ -175,20 +175,3 @@ struct WorldMapView: View {
         .buttonStyle(PressBounceStyle())
     }
 }
-
-/// Gentle attention pulse on the next playable level.
-private struct PulseIfNext: ViewModifier {
-    let active: Bool
-    @State private var pulsing = false
-
-    func body(content: Content) -> some View {
-        content
-            .scaleEffect(active && pulsing ? 1.09 : 1.0)
-            .onAppear {
-                guard active else { return }
-                withAnimation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true)) {
-                    pulsing = true
-                }
-            }
-    }
-}

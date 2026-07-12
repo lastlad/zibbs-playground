@@ -12,8 +12,10 @@ enum Screen: Equatable {
 final class AppState: ObservableObject {
     @Published var screen: Screen = .home
     @Published private(set) var stars: [String: Int]
+    @Published private(set) var seenWorlds: Set<String>
 
     private static let storageKey = "zibbsPlayground.progress.v1"
+    private static let seenWorldsKey = "zibbsPlayground.seenWorlds.v1"
 
     init() {
         if let data = UserDefaults.standard.data(forKey: Self.storageKey),
@@ -21,6 +23,14 @@ final class AppState: ObservableObject {
             stars = decoded
         } else {
             stars = [:]
+        }
+        if let saved = UserDefaults.standard.stringArray(forKey: Self.seenWorldsKey) {
+            seenWorlds = Set(saved)
+        } else {
+            // First run (or upgrade): everything already installed counts as
+            // seen, so NEW badges only ever mark worlds that arrive later.
+            seenWorlds = Set(ContentLibrary.shared.worlds.map(\.id))
+            UserDefaults.standard.set(Array(seenWorlds), forKey: Self.seenWorldsKey)
         }
     }
 
@@ -48,6 +58,12 @@ final class AppState: ObservableObject {
         world.levels.reduce(0) { $0 + stars(for: $1.id) }
     }
 
+    /// True for a world that beamed down over the air and hasn't been opened
+    /// yet — the home screen marks it with a NEW badge.
+    func isNew(_ world: World) -> Bool {
+        !seenWorlds.contains(world.id)
+    }
+
     var totalStars: Int {
         ContentLibrary.shared.worlds.reduce(0) { $0 + starsEarned(in: $1) }
     }
@@ -61,6 +77,10 @@ final class AppState: ObservableObject {
 
     func open(world: World) {
         Narrator.shared.stop()
+        if !seenWorlds.contains(world.id) {
+            seenWorlds.insert(world.id)
+            UserDefaults.standard.set(Array(seenWorlds), forKey: Self.seenWorldsKey)
+        }
         screen = .world(world.id)
     }
 
