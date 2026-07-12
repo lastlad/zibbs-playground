@@ -23,15 +23,17 @@ along a guided path. Unlocks handwriting and pre-writing packs.
   start dots. Finish = 3 stars, like every engine.
 - **Feedback/narration:** all via `GameContext` — no new audio code.
 
-## Touchpoints (the standard six — see README "Adding a new game type")
+## Touchpoints (see README "Adding a new game type")
 
 1. `Games/Engines/TraceGlyphEngine.swift`
 2. `Core/PackModels.swift`: `TraceGlyphConfig` + case + decode/encode;
    `validate` checks glyph names against the bundled library
 3. `Core/GameCatalog.swift`: route the case
 4. `tools/validate_pack.py`: mirror checks; read `glyphs.json` for names
-5. `tools/generate_voice.py`: extraction (moot if generic extraction lands first)
-6. `packs/SCHEMA.md` + `.claude/skills/make-pack/SKILL.md`
+5. `packs/SCHEMA.md` + `.claude/skills/make-pack/SKILL.md`
+
+`tools/generate_voice.py` needs nothing: keep the config to SCHEMA.md's
+spoken-key convention and extraction is automatic.
 
 ## Rollout rule (important)
 

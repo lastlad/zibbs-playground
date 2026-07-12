@@ -108,8 +108,10 @@ That's the one thing that still takes Swift: an engine view in
 `ZibbsPlayground/Games/Engines/`, a config + case in
 `ZibbsPlayground/Core/PackModels.swift`, a route in `GameCatalog.swift`,
 and matching checks in `tools/validate_pack.py` + docs in
-`packs/SCHEMA.md`. Ships with the next Xcode build; older app versions
-skip packs that use templates they don't know.
+`packs/SCHEMA.md`. Name the config's spoken fields per SCHEMA.md's
+spoken-key convention and the voice pipeline records the engine's lines
+with no generator changes. Ships with the next Xcode build; older app
+versions skip packs that use templates they don't know.
 
 ## Building & installing on your iPad
 

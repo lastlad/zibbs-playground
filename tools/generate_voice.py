@@ -75,6 +75,37 @@ def add(lines, text):
         lines.add(normalize(text))
 
 
+# The spoken-key convention every template engine follows (documented in
+# packs/SCHEMA.md): in any object, `spoken` overrides a sibling
+# `prompt`/`question`; `success`, `hint`, and `name` values and `names`
+# array elements are always spoken. Engines that keep to these names need
+# no changes here — extraction below is template-agnostic.
+ALWAYS_SPOKEN = ("success", "hint", "name")
+PROMPTS = ("prompt", "question")
+
+
+def walk(node, lines):
+    """Collect every spoken line in a template config, by key convention."""
+    if isinstance(node, list):
+        for item in node:
+            walk(item, lines)
+        return
+    if not isinstance(node, dict):
+        return
+    if node.get("spoken"):
+        add(lines, node["spoken"])
+    else:
+        for key in PROMPTS:
+            add(lines, node.get(key))
+    for key in ALWAYS_SPOKEN:
+        add(lines, node.get(key))
+    for name in node.get("names") or []:
+        add(lines, name)
+    for value in node.values():
+        if isinstance(value, (dict, list)):
+            walk(value, lines)
+
+
 def pack_lines(pack, app):
     """Every line Zibb speaks while a child plays this pack."""
     lines = set()
@@ -86,31 +117,8 @@ def pack_lines(pack, app):
     for level in pack.get("levels", []):
         add(lines, level.get("intro"))
         template = level.get("template")
-        cfg = level.get(template) or {}
-
-        if template == "tapChoice":
-            for rnd in cfg.get("rounds", []):
-                add(lines, rnd.get("spoken") or rnd.get("question"))
-                add(lines, rnd.get("success"))
-                add(lines, rnd.get("hint"))
-        elif template == "countTap":
-            for rnd in cfg.get("rounds", []):
-                add(lines, rnd.get("spoken") or rnd.get("prompt"))
-                add(lines, rnd.get("success"))
-        elif template == "matchPairs":
-            add(lines, cfg.get("spoken") or cfg.get("prompt"))
-            for pair in cfg.get("pairs", []):
-                add(lines, pair.get("success"))
-        elif template == "sortBins":
-            add(lines, cfg.get("spoken") or cfg.get("prompt"))
-            for item in cfg.get("items", []):
-                add(lines, item.get("name"))
-        elif template == "orderSequence":
-            for rnd in cfg.get("rounds", []):
-                add(lines, rnd.get("spoken") or rnd.get("prompt"))
-                add(lines, rnd.get("success"))
-                for name in rnd.get("names") or []:
-                    add(lines, name)
+        if isinstance(template, str):
+            walk(level.get(template) or {}, lines)
     return lines
 
 

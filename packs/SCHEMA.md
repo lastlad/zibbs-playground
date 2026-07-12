@@ -166,6 +166,19 @@ Numbered slots fill left to right as the child taps the next item.
 
 Covers: counting up/down, life cycles, size ordering, story sequencing.
 
+## Spoken-key convention (for engine authors)
+
+The voice pipeline finds spoken lines in any template config by key name,
+not by template — new engines need no changes in `tools/generate_voice.py`
+as long as they keep to the convention:
+
+- In any object, `spoken` overrides a sibling `prompt`/`question`;
+  whichever wins is spoken.
+- `success`, `hint`, and `name` values, and every element of a `names`
+  array, are always spoken.
+- Nothing else is ever spoken (`question`-bar text, `label`, `text`,
+  `emoji` are display-only unless paired per the rules above).
+
 ## Publishing a pack
 
 1. Add the JSON to `ZibbsPlayground/Packs/` (ships in the next app build) —
