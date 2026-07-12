@@ -30,14 +30,16 @@ struct HomeView: View {
                 Spacer(minLength: 12)
 
                 // Planets — one card per world (every world is a content
-                // pack); scrolls sideways once they outgrow the screen.
+                // pack); scrolls sideways once they outgrow the screen, with
+                // the next card always peeking in so kids know there's more.
                 if library.worlds.isEmpty {
                     emptyState
                 } else {
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 36) {
+                        HStack(spacing: Self.cardSpacing) {
                             ForEach(Array(library.worlds.enumerated()), id: \.element.id) { index, world in
-                                planetCard(for: world, index: index)
+                                planetCard(for: world, index: index,
+                                           width: cardWidth(in: geo.size.width))
                             }
                         }
                         .padding(.horizontal, 40)
@@ -136,7 +138,42 @@ struct HomeView: View {
         .opacity(appeared ? 1 : 0)
     }
 
-    private func planetCard(for world: World, index: Int) -> some View {
+    // MARK: Planet cards
+
+    private static let cardSpacing: CGFloat = 36
+    private static let naturalCardWidth: CGFloat = 272
+    /// Fraction of a card that must stay visible at the trailing edge when
+    /// the row overflows — the "there's more" signal for pre-readers.
+    private static let peekFraction: CGFloat = 0.42
+
+    /// Cards keep their natural width while every world fits on screen.
+    /// Once the row overflows, they shrink just enough that after the last
+    /// fully visible card, a decent slice of the next one always peeks in
+    /// (a hair-thin sliver — or a cut that lands in the gap — reads as
+    /// "nothing more" to a four-year-old).
+    private func cardWidth(in totalWidth: CGFloat) -> CGFloat {
+        let count = CGFloat(library.worlds.count)
+        let slot = Self.naturalCardWidth + Self.cardSpacing
+        if 80 + count * slot - Self.cardSpacing <= totalWidth {
+            return Self.naturalCardWidth   // everything fits; row is centered
+        }
+        let fullCards = max(1, (totalWidth - 40) / slot).rounded(.down)
+        return min(Self.naturalCardWidth,
+                   (totalWidth - 40 - fullCards * Self.cardSpacing)
+                       / (fullCards + Self.peekFraction))
+    }
+
+    /// The world to gently nudge toward: the first one that still has an
+    /// unplayed level. Fully played worlds (and a fresh NEW arrival being
+    /// its own beacon) don't pulse.
+    private var suggestedWorldID: String? {
+        library.worlds.first { world in
+            !appState.isNew(world)
+                && world.levels.contains { appState.stars(for: $0.id) == 0 }
+        }?.id
+    }
+
+    private func planetCard(for world: World, index: Int, width: CGFloat) -> some View {
         Button {
             SoundFX.shared.play(.whoosh)
             appState.open(world: world)
@@ -167,6 +204,7 @@ struct HomeView: View {
                         .shadow(color: .black.opacity(0.3), radius: 4, y: 2)
                 }
                 .floating(amplitude: 7, period: 3.0, phase: Double(index) * 1.7)
+                .modifier(PulseIfNext(active: world.id == suggestedWorldID))
 
                 Text(world.name)
                     .font(Theme.rounded(28))
@@ -187,11 +225,32 @@ struct HomeView: View {
                 }
             }
             .padding(22)
-            .frame(width: 272)
+            .frame(width: width)
             .gamePanel(tint: world.accent)
+            .overlay(alignment: .topTrailing) {
+                if appState.isNew(world) {
+                    newBadge
+                }
+            }
         }
         .buttonStyle(PressBounceStyle())
         .opacity(appeared ? 1 : 0)
         .offset(y: appeared ? 0 : 60)
+    }
+
+    /// Marks a world that beamed down over the air and hasn't been opened.
+    private var newBadge: some View {
+        Text("✨ NEW")
+            .font(Theme.rounded(19, weight: .heavy))
+            .foregroundColor(Theme.deepSpace)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 7)
+            .background(
+                Capsule()
+                    .fill(Theme.starYellow)
+                    .shadow(color: Theme.starYellow.opacity(0.7), radius: 10)
+            )
+            .rotationEffect(.degrees(8))
+            .offset(x: 12, y: -12)
     }
 }

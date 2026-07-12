@@ -189,6 +189,24 @@ extension View {
     }
 }
 
+/// Gentle attention pulse on "go here next" elements (the next playable
+/// level on the map, the suggested planet on the home screen).
+struct PulseIfNext: ViewModifier {
+    let active: Bool
+    @State private var pulsing = false
+
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(active && pulsing ? 1.09 : 1.0)
+            .onAppear {
+                guard active else { return }
+                withAnimation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true)) {
+                    pulsing = true
+                }
+            }
+    }
+}
+
 /// Gentle endless bobbing (floating in space).
 struct FloatingModifier: ViewModifier {
     var amplitude: CGFloat = 8
