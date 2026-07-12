@@ -18,7 +18,9 @@
     {
       "id": "world.addition",
       "version": 1,
-      "file": "ZibbsPlayground/Packs/world.addition.json"
+      "file": "ZibbsPlayground/Packs/world.addition.json",
+      "voiceVersion": 1,
+      "voiceFile": "ZibbsPlayground/Voice/world.addition.voice.json"
     }
   ],
   "appVoice": {

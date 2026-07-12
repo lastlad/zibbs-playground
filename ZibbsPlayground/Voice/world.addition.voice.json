@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 1,
+  "id": "world.addition",
+  "version": 1,
+  "voice": "coral",
+  "clipsPath": "ZibbsPlayground/Voice/clips",
+  "lines": [
+    {
+      "text": "Add each sum up, then drag it to the number it makes!",
+      "file": "979df8c6c40f37a7-c33838d2.mp3"
+    },
+    {
+      "text": "Count all ten fingers — five on each hand!",
+      "file": "c6d1ea27d1ed4624-fd705c47.mp3"
+    },
+    {
+      "text": "Count each group, then drag the double that makes it!",
+      "file": "e2114dbc7ce9e516-631ed6ba.mp3"
+    },
+    {
+      "text": "Count each group, then drag the sum that makes it!",
+      "file": "7da44d7d053e4985-5f819096.mp3"
+    },
+    {
+      "text": "Count two fingers, then two more!",
+      "file": "60b1771b1def03a6-b241fb97.mp3"
+    },
+    {
+      "text": "Count up! One... then one more!",
+      "file": "2fa37c22aa13c88f-222dd0ab.mp3"
+    },
+    {
+      "text": "Double trouble! Three plus three makes...?",
+      "file": "914cc08c0ae8a880-b9cd50fc.mp3"
+    },
+    {
+      "text": "Doubles are twin sums — the same number twice! Count each group, then drag its double onto it!",
+      "file": "d950933a9c544350-b1320a4a.mp3"
+    },
+    {
+      "text": "Eight stars! Five plus three makes eight! Dazzling!",
+      "file": "d89d475b66d128c0-f8f16a6e.mp3"
+    },
+    {
+      "text": "Eight!",
+      "file": "e6037441cf8d7e46-79ab99fd.mp3"
+    },
+    {
+      "text": "Five fish! Three plus two makes five!",
+      "file": "c7f281955b0ed535-73629199.mp3"
+    },
+    {
+      "text": "Five plus five makes TEN flowers! The biggest double!",
+      "file": "c961932d6a58622e-e8d6b1a8.mp3"
+    },
+    {
+      "text": "Five plus two makes seven watermelons! Yum!",
+      "file": "79605ccf5a04a6c9-f11016db.mp3"
+    },
+    {
+      "text": "Five pretzels! Three plus two makes five! What a feast!",
+      "file": "6b227affc3ae9ac0-784712a6.mp3"
+    },
+    {
+      "text": "Five stars were twinkling, then three more popped out! Tap every star!",
+      "file": "f9a28de6fb7e8280-7984029c.mp3"
+    },
+    {
+      "text": "Five!",
+      "file": "78a058647dc5729e-baecc479.mp3"
+    },
+    {
+      "text": "Five! You're a one-more wizard!",
+      "file": "ba590b67ab5235eb-9f6d745b.mp3"
+    },
+    {
+      "text": "Five, six, seven, eight! Counting on is an adding superpower!",
+      "file": "91fbd97ad36840a0-b55e4173.mp3"
+    },
+    {
+      "text": "Four balloons! Three plus one makes four!",
+      "file": "0cf7967b0fe17ea7-ed59fb75.mp3"
+    },
+    {
+      "text": "Four butterflies were fluttering, then two more landed! Count them all!",
+      "file": "8b847fd1cfee59b8-035e1a0c.mp3"
+    },
+    {
+      "text": "Four frogs! Three and one more makes four!",
+      "file": "517d9c57deb9c31e-6b4d3fc1.mp3"
+    },
+    {
+      "text": "Four juices! Two plus two makes four!",
+      "file": "fec98056d2c92029-564bbcb7.mp3"
+    },
+    {
+      "text": "Four plus four makes eight balloons!",
+      "file": "562b2e930b24452b-d1459526.mp3"
+    },
+    {
+      "text": "Four plus one makes five bananas!",
+      "file": "3e64c604bb57861f-6014e368.mp3"
+    },
+    {
+      "text": "Four plus one makes five!",
+      "file": "b2503bac5e11e0a4-0e0c4c52.mp3"
+    },
+    {
+      "text": "Four!",
+      "file": "33035c37a9377b53-0e943b74.mp3"
+    },
+    {
+      "text": "Four! That's a double!",
+      "file": "1e972d0f7682c8e9-d7aeb023.mp3"
+    },
+    {
+      "text": "Four! Three, then four!",
+      "file": "105a4b706834df34-8f83982f.mp3"
+    },
+    {
+      "text": "Four, then count up one!",
+      "file": "a5d4215c79e7a97a-0fbbc60d.mp3"
+    },
+    {
+      "text": "Here's a big adding trick: you don't have to start at one! Hop on the train and count UP from where we start!",
+      "file": "f2cdbadb4cc1200b-9a00f5e4.mp3"
+    },
+    {
+      "text": "Hold up one finger, then one more, and count them!",
+      "file": "92a25484ee0ddb32-7374e800.mp3"
+    },
+    {
+      "text": "Hooray! You finished every adventure on Plus Planet! You are a true Star Explorer!",
+      "file": "4ea705e296c87103-e1063c95.mp3"
+    },
+    {
+      "text": "I had one cookie, and I baked one more! One plus one makes...?",
+      "file": "b2a8d3f5ff9afbbe-28885d58.mp3"
+    },
+    {
+      "text": "It's the great adding party! Show me everything you've learned, Explorer — every right answer sets off fireworks!",
+      "file": "1f14d6f1dd665139-e6fd24fb.mp3"
+    },
+    {
+      "text": "Last one! What is one more than four?",
+      "file": "85d052f8c9e04960-45348234.mp3"
+    },
+    {
+      "text": "One bunny was hopping, and one more came! Tap each bunny and count!",
+      "file": "732e58a06975e8e7-d1c437d2.mp3"
+    },
+    {
+      "text": "One cookie, then one more! What is one more than one?",
+      "file": "d0084184d34d061d-3aada66e.mp3"
+    },
+    {
+      "text": "One plus four makes five!",
+      "file": "efe527813d88295a-255b34bf.mp3"
+    },
+    {
+      "text": "One plus one makes two apples!",
+      "file": "d0fd737b4f6976c9-5cfe77b1.mp3"
+    },
+    {
+      "text": "One plus one makes two socks — a pair!",
+      "file": "616eccef5d1ad8ff-648de124.mp3"
+    },
+    {
+      "text": "One plus three makes four!",
+      "file": "b663ca0dcd0bfb2e-8e1b2c44.mp3"
+    },
+    {
+      "text": "Party question one! What is one more than five?",
+      "file": "dc8260b196e31d9b-410d0e77.mp3"
+    },
+    {
+      "text": "Say five, then count one more!",
+      "file": "f476a11320c6e803-b182c32e.mp3"
+    },
+    {
+      "text": "Say two, then count one more!",
+      "file": "d419510817b4b316-96fa70d6.mp3"
+    },
+    {
+      "text": "Seven!",
+      "file": "8e6f810b4f4faffb-c422701e.mp3"
+    },
+    {
+      "text": "Six butterflies! Four plus two makes six!",
+      "file": "14efaa8a98f29576-29bfdf72.mp3"
+    },
+    {
+      "text": "Six!",
+      "file": "e88dce5d743e4969-04fb7077.mp3"
+    },
+    {
+      "text": "Six! One more than five is six!",
+      "file": "4bcb7acd3d6574db-7028a0de.mp3"
+    },
+    {
+      "text": "Six! You remembered your doubles!",
+      "file": "d53fb095db120802-6b3136d4.mp3"
+    },
+    {
+      "text": "Snack time on Plus Planet! Listen to my snack story, add the snacks together, and tap how many there are in all!",
+      "file": "e730926f17a05457-2eab4697.mp3"
+    },
+    {
+      "text": "Start at three, count one more, then find that group!",
+      "file": "c4a2782c27f9a3d9-ed445858.mp3"
+    },
+    {
+      "text": "Start at three, then count on two more! Four... five!",
+      "file": "8c12863c7a681ec1-9cb75b4e.mp3"
+    },
+    {
+      "text": "TEN! Five plus five makes ten! You're an adding superstar, Explorer! Fireworks for you!",
+      "file": "46ed86fd48878b2d-0f9ee7b9.mp3"
+    },
+    {
+      "text": "The biggest party question! Five plus five makes...?",
+      "file": "66df54a9ce2d18ef-13e98e69.mp3"
+    },
+    {
+      "text": "The sorting machine is mixed up! Work out each sum, then drag it to the number it makes!",
+      "file": "19927618cc812fe2-0aeac4f0.mp3"
+    },
+    {
+      "text": "The train starts at two! Tap two, then keep counting up!",
+      "file": "af7bf452e1348758-5502ac1c.mp3"
+    },
+    {
+      "text": "These adding sums are looking for their groups! Count the fruit in each group, then drag the right sum onto it.",
+      "file": "a36976bf6e29d6c3-38025eb8.mp3"
+    },
+    {
+      "text": "This train starts at three! Count on from three!",
+      "file": "c438ffc623853a22-926824e3.mp3"
+    },
+    {
+      "text": "Three balloons plus one more balloon! Tap the group that shows three plus one!",
+      "file": "4f1f45f8693690e9-e030b42d.mp3"
+    },
+    {
+      "text": "Three chicks! Two and one more makes three!",
+      "file": "1e7e07e59ed25c5c-fcb57d04.mp3"
+    },
+    {
+      "text": "Three cupcakes! Two plus one makes three!",
+      "file": "8c843d5a736febe2-77894eb8.mp3"
+    },
+    {
+      "text": "Three fingers on each hand — count them all!",
+      "file": "95b97e6fc2575667-4935a9e2.mp3"
+    },
+    {
+      "text": "Three fish were swimming, then two more splashed in! Tap them all!",
+      "file": "24655f04bff407e8-250b377b.mp3"
+    },
+    {
+      "text": "Three frogs were splashing, and one more hopped in! Count every one!",
+      "file": "b049b00210b323b7-d314029d.mp3"
+    },
+    {
+      "text": "Three plus one makes four!",
+      "file": "cffce13fa486fdbc-f0d39477.mp3"
+    },
+    {
+      "text": "Three plus three makes six grapes!",
+      "file": "28338839f8bc738d-5b300efe.mp3"
+    },
+    {
+      "text": "Three plus three makes six ladybugs!",
+      "file": "58573a9eecd674ef-ca5d9e60.mp3"
+    },
+    {
+      "text": "Three plus two makes five!",
+      "file": "3e36c8c1b407a0be-2a9d71fe.mp3"
+    },
+    {
+      "text": "Three pretzels, and two more! Three plus two makes...?",
+      "file": "9351375597fcfdaf-39bc327b.mp3"
+    },
+    {
+      "text": "Three!",
+      "file": "41c751d5c3ef44df-d9d429dc.mp3"
+    },
+    {
+      "text": "Three! Two, then three!",
+      "file": "2409fe7beae61e66-39ad1820.mp3"
+    },
+    {
+      "text": "Three, four, five, six! Choo choo!",
+      "file": "ee3aa52c9b126470-45bb9969.mp3"
+    },
+    {
+      "text": "Three, then the very next number!",
+      "file": "56b428fec421abfe-0384a04c.mp3"
+    },
+    {
+      "text": "Time for BIGGER sums! Some friends were playing, then more arrived. Tap every single one to count them all together!",
+      "file": "87e406e8902ebcb6-9299a03f.mp3"
+    },
+    {
+      "text": "Two bunnies! One and one more makes two!",
+      "file": "d5fcc4c9482d64a7-1c88a2cd.mp3"
+    },
+    {
+      "text": "Two chicks were playing, and one more joined! Count them all!",
+      "file": "c92a809a2c054601-093df47d.mp3"
+    },
+    {
+      "text": "Two cookies! One plus one makes two!",
+      "file": "ef2bcdae9aaee7c3-507b8686.mp3"
+    },
+    {
+      "text": "Two cupcakes, and one more! Two plus one makes...?",
+      "file": "174d2a91814340e7-a1750c18.mp3"
+    },
+    {
+      "text": "Two juices, and two more! Two plus two makes...?",
+      "file": "b77f18c5c9ce8906-a81f42c2.mp3"
+    },
+    {
+      "text": "Two plus one makes three cars — that one was a sneaky non-double!",
+      "file": "a09cc0bfdf330b82-605423ef.mp3"
+    },
+    {
+      "text": "Two plus one makes three strawberries!",
+      "file": "6d509e545fc140ab-bde5d51a.mp3"
+    },
+    {
+      "text": "Two plus two makes four oranges!",
+      "file": "41a60de76a50e595-d4941e77.mp3"
+    },
+    {
+      "text": "Two plus two makes four paws!",
+      "file": "8c73911f0b4044fe-62965dfb.mp3"
+    },
+    {
+      "text": "Two plus two makes four!",
+      "file": "e552ff148de527b0-3557ed5a.mp3"
+    },
+    {
+      "text": "Two plus two makes...?",
+      "file": "3dac62731139c578-6e8b1aee.mp3"
+    },
+    {
+      "text": "Two!",
+      "file": "6593dc3e80206f11-cc255a88.mp3"
+    },
+    {
+      "text": "Two! One more than one is two!",
+      "file": "7d1f42c2f860e837-77389188.mp3"
+    },
+    {
+      "text": "Two, three, four! You counted on!",
+      "file": "cbef3b4ccb9a9524-f570924d.mp3"
+    },
+    {
+      "text": "Welcome to Plus Planet! Tap a glowing level to play!",
+      "file": "a5edbd0c077344f0-6dc0792b.mp3"
+    },
+    {
+      "text": "Welcome to Plus Planet, Explorer! Adding means putting together. Watch — when one more friend hops in, the group gets bigger!",
+      "file": "21e46f97fae5b496-42b70b6a.mp3"
+    },
+    {
+      "text": "What is one more than three?",
+      "file": "f30eb3e9d3f6a970-273fd65f.mp3"
+    },
+    {
+      "text": "What is one more than two?",
+      "file": "1a4661944c4a7ee9-4efe6fd7.mp3"
+    },
+    {
+      "text": "Wow! A new world just landed: Plus Planet! Let's go explore!",
+      "file": "e5e245055f7e9a4b-0a36979a.mp3"
+    },
+    {
+      "text": "Wow, this train starts at five! Count on, Explorer!",
+      "file": "d26bcea0c5150f88-10012680.mp3"
+    },
+    {
+      "text": "Zibb loves one more of everything! When I say a number, tap the number that is one more!",
+      "file": "977583eb292802f4-7479d0a1.mp3"
+    }
+  ]
+}
