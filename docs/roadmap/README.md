@@ -7,7 +7,6 @@ context to start without re-deriving the design, no more. Update the
 | Feature | Status |
 |---|---|
 | [trace-glyph-engine.md](trace-glyph-engine.md) | Designed, awaiting two decisions |
-| [generic-voice-line-extraction.md](generic-voice-line-extraction.md) | Ready to build |
 | [letters-glyph-pack.md](letters-glyph-pack.md) | Blocked on trace engine |
 
 Before starting any feature: read `README.md` and `packs/SCHEMA.md` at the
