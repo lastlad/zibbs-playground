@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "id": "world.addition",
+  "version": 1,
+  "worldID": "A",
+  "name": "Plus Planet",
+  "tagline": "Put numbers together!",
+  "emoji": "➕",
+  "accent": "blue",
+  "accentSecondary": "yellow",
+  "ring": true,
+  "levels": [
+    {
+      "id": "A01",
+      "title": "One More Friend",
+      "concept": "Adding one",
+      "emoji": "🐰",
+      "intro": "Welcome to Plus Planet, Explorer! Adding means putting together. Watch — when one more friend hops in, the group gets bigger!",
+      "template": "countTap",
+      "countTap": {
+        "rounds": [
+          {
+            "prompt": "Tap each bunny and count!",
+            "spoken": "One bunny was hopping, and one more came! Tap each bunny and count!",
+            "emoji": "🐰",
+            "count": 2,
+            "success": "Two bunnies! One and one more makes two!"
+          },
+          {
+            "prompt": "One more chick joined! Count them all!",
+            "spoken": "Two chicks were playing, and one more joined! Count them all!",
+            "emoji": "🐥",
+            "count": 3,
+            "success": "Three chicks! Two and one more makes three!"
+          },
+          {
+            "prompt": "One more frog hopped in! Count every one!",
+            "spoken": "Three frogs were splashing, and one more hopped in! Count every one!",
+            "emoji": "🐸",
+            "count": 4,
+            "success": "Four frogs! Three and one more makes four!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A02",
+      "title": "One More, Please!",
+      "concept": "One more than a number",
+      "emoji": "🍪",
+      "intro": "Zibb loves one more of everything! When I say a number, tap the number that is one more!",
+      "template": "tapChoice",
+      "tapChoice": {
+        "rounds": [
+          {
+            "question": "What is one more than one?",
+            "spoken": "One cookie, then one more! What is one more than one?",
+            "options": [{ "text": "2" }, { "text": "1" }, { "text": "3" }],
+            "answer": 0,
+            "success": "Two! One more than one is two!",
+            "hint": "Count up! One... then one more!"
+          },
+          {
+            "question": "What is one more than two?",
+            "spoken": "What is one more than two?",
+            "options": [{ "text": "2" }, { "text": "3" }, { "text": "4" }],
+            "answer": 1,
+            "success": "Three! Two, then three!",
+            "hint": "Say two, then count one more!"
+          },
+          {
+            "question": "What is one more than three?",
+            "spoken": "What is one more than three?",
+            "options": [{ "text": "5" }, { "text": "2" }, { "text": "4" }],
+            "answer": 2,
+            "success": "Four! Three, then four!",
+            "hint": "Three, then the very next number!"
+          },
+          {
+            "question": "What is one more than four?",
+            "spoken": "Last one! What is one more than four?",
+            "options": [{ "text": "5" }, { "text": "4" }, { "text": "3" }],
+            "answer": 0,
+            "success": "Five! You're a one-more wizard!",
+            "hint": "Four, then count up one!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A03",
+      "title": "Put-Together Pals",
+      "concept": "Matching sums to groups",
+      "emoji": "🤝",
+      "intro": "These adding sums are looking for their groups! Count the fruit in each group, then drag the right sum onto it.",
+      "template": "matchPairs",
+      "matchPairs": {
+        "prompt": "Drag each sum to the group it makes!",
+        "spoken": "Count each group, then drag the sum that makes it!",
+        "perRound": 3,
+        "pairs": [
+          {
+            "drag": { "text": "1+1" },
+            "target": { "emoji": "🍎", "count": 2 },
+            "success": "One plus one makes two apples!"
+          },
+          {
+            "drag": { "text": "2+1" },
+            "target": { "emoji": "🍓", "count": 3 },
+            "success": "Two plus one makes three strawberries!"
+          },
+          {
+            "drag": { "text": "2+2" },
+            "target": { "emoji": "🍊", "count": 4 },
+            "success": "Two plus two makes four oranges!"
+          },
+          {
+            "drag": { "text": "4+1" },
+            "target": { "emoji": "🍌", "count": 5 },
+            "success": "Four plus one makes five bananas!"
+          },
+          {
+            "drag": { "text": "3+3" },
+            "target": { "emoji": "🍇", "count": 6 },
+            "success": "Three plus three makes six grapes!"
+          },
+          {
+            "drag": { "text": "5+2" },
+            "target": { "emoji": "🍉", "count": 7 },
+            "success": "Five plus two makes seven watermelons! Yum!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A04",
+      "title": "Count-On Train",
+      "concept": "Counting on from a number",
+      "emoji": "🚂",
+      "intro": "Here's a big adding trick: you don't have to start at one! Hop on the train and count UP from where we start!",
+      "template": "orderSequence",
+      "orderSequence": {
+        "rounds": [
+          {
+            "prompt": "Start at two and count up!",
+            "spoken": "The train starts at two! Tap two, then keep counting up!",
+            "items": [{ "text": "2" }, { "text": "3" }, { "text": "4" }],
+            "names": ["Two!", "Three!", "Four!"],
+            "success": "Two, three, four! You counted on!"
+          },
+          {
+            "prompt": "Now start at three and count up!",
+            "spoken": "This train starts at three! Count on from three!",
+            "items": [{ "text": "3" }, { "text": "4" }, { "text": "5" }, { "text": "6" }],
+            "names": ["Three!", "Four!", "Five!", "Six!"],
+            "success": "Three, four, five, six! Choo choo!"
+          },
+          {
+            "prompt": "The big train starts at five! Count up!",
+            "spoken": "Wow, this train starts at five! Count on, Explorer!",
+            "items": [{ "text": "5" }, { "text": "6" }, { "text": "7" }, { "text": "8" }],
+            "names": ["Five!", "Six!", "Seven!", "Eight!"],
+            "success": "Five, six, seven, eight! Counting on is an adding superpower!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A05",
+      "title": "Snack Sums",
+      "concept": "Adding small numbers",
+      "emoji": "🧁",
+      "intro": "Snack time on Plus Planet! Listen to my snack story, add the snacks together, and tap how many there are in all!",
+      "template": "tapChoice",
+      "tapChoice": {
+        "rounds": [
+          {
+            "question": "1 cookie plus 1 cookie makes...?",
+            "spoken": "I had one cookie, and I baked one more! One plus one makes...?",
+            "options": [{ "text": "2" }, { "text": "3" }, { "text": "1" }],
+            "answer": 0,
+            "success": "Two cookies! One plus one makes two!",
+            "hint": "Hold up one finger, then one more, and count them!"
+          },
+          {
+            "question": "2 cupcakes plus 1 cupcake makes...?",
+            "spoken": "Two cupcakes, and one more! Two plus one makes...?",
+            "options": [{ "text": "2" }, { "text": "4" }, { "text": "3" }],
+            "answer": 2,
+            "success": "Three cupcakes! Two plus one makes three!",
+            "hint": "Say two, then count one more!"
+          },
+          {
+            "question": "2 juices plus 2 juices makes...?",
+            "spoken": "Two juices, and two more! Two plus two makes...?",
+            "options": [{ "text": "4" }, { "text": "3" }, { "text": "5" }],
+            "answer": 0,
+            "success": "Four juices! Two plus two makes four!",
+            "hint": "Count two fingers, then two more!"
+          },
+          {
+            "question": "3 pretzels plus 2 pretzels makes...?",
+            "spoken": "Three pretzels, and two more! Three plus two makes...?",
+            "options": [{ "text": "6" }, { "text": "5" }, { "text": "4" }],
+            "answer": 1,
+            "success": "Five pretzels! Three plus two makes five! What a feast!",
+            "hint": "Start at three, then count on two more! Four... five!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A06",
+      "title": "Sum Sorting Station",
+      "concept": "Sorting sums by their total",
+      "emoji": "🗂️",
+      "intro": "The sorting machine is mixed up! Work out each sum, then drag it to the number it makes!",
+      "template": "sortBins",
+      "sortBins": {
+        "prompt": "Work out each sum, then drag it to its answer!",
+        "spoken": "Add each sum up, then drag it to the number it makes!",
+        "perWave": 3,
+        "bins": [
+          { "label": "Makes 4", "emoji": "4️⃣" },
+          { "label": "Makes 5", "emoji": "5️⃣" }
+        ],
+        "items": [
+          { "text": "2+2", "bin": 0, "name": "Two plus two makes four!" },
+          { "text": "3+2", "bin": 1, "name": "Three plus two makes five!" },
+          { "text": "3+1", "bin": 0, "name": "Three plus one makes four!" },
+          { "text": "4+1", "bin": 1, "name": "Four plus one makes five!" },
+          { "text": "1+3", "bin": 0, "name": "One plus three makes four!" },
+          { "text": "1+4", "bin": 1, "name": "One plus four makes five!" }
+        ]
+      }
+    },
+    {
+      "id": "A07",
+      "title": "Big Splash Sums",
+      "concept": "Adding to bigger numbers",
+      "emoji": "🐠",
+      "intro": "Time for BIGGER sums! Some friends were playing, then more arrived. Tap every single one to count them all together!",
+      "template": "countTap",
+      "countTap": {
+        "rounds": [
+          {
+            "prompt": "3 fish plus 2 more! Tap them all!",
+            "spoken": "Three fish were swimming, then two more splashed in! Tap them all!",
+            "emoji": "🐠",
+            "count": 5,
+            "success": "Five fish! Three plus two makes five!"
+          },
+          {
+            "prompt": "4 butterflies plus 2 more! Count them all!",
+            "spoken": "Four butterflies were fluttering, then two more landed! Count them all!",
+            "emoji": "🦋",
+            "count": 6,
+            "success": "Six butterflies! Four plus two makes six!"
+          },
+          {
+            "prompt": "5 stars plus 3 more! Tap every star!",
+            "spoken": "Five stars were twinkling, then three more popped out! Tap every star!",
+            "emoji": "🌟",
+            "count": 8,
+            "success": "Eight stars! Five plus three makes eight! Dazzling!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A08",
+      "title": "Double Trouble",
+      "concept": "Doubles",
+      "emoji": "👯",
+      "intro": "Doubles are twin sums — the same number twice! Count each group, then drag its double onto it!",
+      "template": "matchPairs",
+      "matchPairs": {
+        "prompt": "Drag each double to the group it makes!",
+        "spoken": "Count each group, then drag the double that makes it!",
+        "perRound": 3,
+        "pairs": [
+          {
+            "drag": { "text": "1+1" },
+            "target": { "emoji": "🧦", "count": 2 },
+            "success": "One plus one makes two socks — a pair!"
+          },
+          {
+            "drag": { "text": "2+2" },
+            "target": { "emoji": "🐾", "count": 4 },
+            "success": "Two plus two makes four paws!"
+          },
+          {
+            "drag": { "text": "3+3" },
+            "target": { "emoji": "🐞", "count": 6 },
+            "success": "Three plus three makes six ladybugs!"
+          },
+          {
+            "drag": { "text": "4+4" },
+            "target": { "emoji": "🎈", "count": 8 },
+            "success": "Four plus four makes eight balloons!"
+          },
+          {
+            "drag": { "text": "5+5" },
+            "target": { "emoji": "🌼", "count": 10 },
+            "success": "Five plus five makes TEN flowers! The biggest double!"
+          },
+          {
+            "drag": { "text": "2+1" },
+            "target": { "emoji": "🚗", "count": 3 },
+            "success": "Two plus one makes three cars — that one was a sneaky non-double!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A09",
+      "title": "Zibb's Adding Party",
+      "concept": "Addition review",
+      "emoji": "🎉",
+      "intro": "It's the great adding party! Show me everything you've learned, Explorer — every right answer sets off fireworks!",
+      "template": "tapChoice",
+      "tapChoice": {
+        "rounds": [
+          {
+            "question": "What is one more than five?",
+            "spoken": "Party question one! What is one more than five?",
+            "options": [{ "text": "6" }, { "text": "4" }, { "text": "7" }],
+            "answer": 0,
+            "success": "Six! One more than five is six!",
+            "hint": "Say five, then count one more!"
+          },
+          {
+            "question": "2 plus 2 makes...?",
+            "spoken": "Two plus two makes...?",
+            "options": [{ "text": "3" }, { "text": "4" }, { "text": "5" }],
+            "answer": 1,
+            "success": "Four! That's a double!",
+            "hint": "Count two fingers, then two more!"
+          },
+          {
+            "question": "Tap the group that shows 3 plus 1!",
+            "spoken": "Three balloons plus one more balloon! Tap the group that shows three plus one!",
+            "options": [
+              { "emoji": "🎈", "count": 4 },
+              { "emoji": "🎈", "count": 3 },
+              { "emoji": "🎈", "count": 5 }
+            ],
+            "answer": 0,
+            "success": "Four balloons! Three plus one makes four!",
+            "hint": "Start at three, count one more, then find that group!"
+          },
+          {
+            "question": "3 plus 3 makes...?",
+            "spoken": "Double trouble! Three plus three makes...?",
+            "options": [{ "text": "5" }, { "text": "7" }, { "text": "6" }],
+            "answer": 2,
+            "success": "Six! You remembered your doubles!",
+            "hint": "Three fingers on each hand — count them all!"
+          },
+          {
+            "question": "The BIG one! 5 plus 5 makes...?",
+            "spoken": "The biggest party question! Five plus five makes...?",
+            "options": [{ "text": "10" }, { "text": "8" }, { "text": "9" }],
+            "answer": 0,
+            "success": "TEN! Five plus five makes ten! You're an adding superstar, Explorer! Fireworks for you!",
+            "hint": "Count all ten fingers — five on each hand!"
+          }
+        ]
+      }
+    }
+  ]
+}
